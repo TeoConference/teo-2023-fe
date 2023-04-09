@@ -7,7 +7,7 @@ yarn dev
 
 ### Commit Message
 
-- `feat`:` 새로운 기능 추가
+- `feat`: 새로운 기능 추가
 
 - `design`: css 변경 등 사용자 UI 디자인 수정
 
