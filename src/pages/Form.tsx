@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Card from 'components/form/Card'
+import FormTemplate from 'template/FormTemplate'
 
 const Form = () => {
-  return <Card />
+  return <FormTemplate />
 }
 
 export default Form
