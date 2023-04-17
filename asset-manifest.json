@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "https://teoconference.github.io/teo-2023-fe/static/css/main.69c3efaf.css",
-    "main.js": "https://teoconference.github.io/teo-2023-fe/static/js/main.fd8baff9.js",
+    "main.js": "https://teoconference.github.io/teo-2023-fe/static/js/main.ea13c4a7.js",
     "static/media/SampleAnimal.png": "https://teoconference.github.io/teo-2023-fe/static/media/SampleAnimal.928f0a9828a7fcbff2a9.png",
     "index.html": "https://teoconference.github.io/teo-2023-fe/index.html",
     "static/media/QR.svg": "https://teoconference.github.io/teo-2023-fe/static/media/QR.6fba5e226697c6eae88dabb68c02020a.svg",
     "main.69c3efaf.css.map": "https://teoconference.github.io/teo-2023-fe/static/css/main.69c3efaf.css.map",
-    "main.fd8baff9.js.map": "https://teoconference.github.io/teo-2023-fe/static/js/main.fd8baff9.js.map"
+    "main.ea13c4a7.js.map": "https://teoconference.github.io/teo-2023-fe/static/js/main.ea13c4a7.js.map"
   },
   "entrypoints": [
     "static/css/main.69c3efaf.css",
-    "static/js/main.fd8baff9.js"
+    "static/js/main.ea13c4a7.js"
   ]
 }
