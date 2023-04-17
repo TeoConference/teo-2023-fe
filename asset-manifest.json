@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/teo-2023-fe/static/css/main.69c3efaf.css",
-    "main.js": "/teo-2023-fe/static/js/main.2ee434f6.js",
-    "static/media/SampleAnimal.png": "/teo-2023-fe/static/media/SampleAnimal.928f0a9828a7fcbff2a9.png",
-    "index.html": "/teo-2023-fe/index.html",
-    "static/media/QR.svg": "/teo-2023-fe/static/media/QR.6fba5e226697c6eae88dabb68c02020a.svg",
-    "main.69c3efaf.css.map": "/teo-2023-fe/static/css/main.69c3efaf.css.map",
-    "main.2ee434f6.js.map": "/teo-2023-fe/static/js/main.2ee434f6.js.map"
+    "main.css": "https://teoconference.github.io/teo-2023-fe/static/css/main.69c3efaf.css",
+    "main.js": "https://teoconference.github.io/teo-2023-fe/static/js/main.fd8baff9.js",
+    "static/media/SampleAnimal.png": "https://teoconference.github.io/teo-2023-fe/static/media/SampleAnimal.928f0a9828a7fcbff2a9.png",
+    "index.html": "https://teoconference.github.io/teo-2023-fe/index.html",
+    "static/media/QR.svg": "https://teoconference.github.io/teo-2023-fe/static/media/QR.6fba5e226697c6eae88dabb68c02020a.svg",
+    "main.69c3efaf.css.map": "https://teoconference.github.io/teo-2023-fe/static/css/main.69c3efaf.css.map",
+    "main.fd8baff9.js.map": "https://teoconference.github.io/teo-2023-fe/static/js/main.fd8baff9.js.map"
   },
   "entrypoints": [
     "static/css/main.69c3efaf.css",
-    "static/js/main.2ee434f6.js"
+    "static/js/main.fd8baff9.js"
   ]
 }
