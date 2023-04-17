@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/teo-2023-fe/static/css/main.69c3efaf.css",
-    "main.js": "/teo-2023-fe/static/js/main.0de81143.js",
+    "main.js": "/teo-2023-fe/static/js/main.2ee434f6.js",
     "static/media/SampleAnimal.png": "/teo-2023-fe/static/media/SampleAnimal.928f0a9828a7fcbff2a9.png",
     "index.html": "/teo-2023-fe/index.html",
     "static/media/QR.svg": "/teo-2023-fe/static/media/QR.6fba5e226697c6eae88dabb68c02020a.svg",
     "main.69c3efaf.css.map": "/teo-2023-fe/static/css/main.69c3efaf.css.map",
-    "main.0de81143.js.map": "/teo-2023-fe/static/js/main.0de81143.js.map"
+    "main.2ee434f6.js.map": "/teo-2023-fe/static/js/main.2ee434f6.js.map"
   },
   "entrypoints": [
     "static/css/main.69c3efaf.css",
-    "static/js/main.0de81143.js"
+    "static/js/main.2ee434f6.js"
   ]
 }
