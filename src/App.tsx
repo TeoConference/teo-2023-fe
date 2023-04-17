@@ -6,10 +6,11 @@ import 'styles/global.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename={'/teo-2023-fe'}>
       <Routes>
-        <Route path="/" element={<div>Home</div>} />
+        <Route path="/" element={<div>Hommie</div>} />
         <Route path="/form" element={<Form />} />
+        <Route path="/r1" element={<div>r1</div>} />
       </Routes>
     </Router>
   )
