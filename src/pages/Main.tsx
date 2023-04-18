@@ -1,12 +1,15 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Header from '../components/common/Header'
 
 const Main = () => {
   return (
-    <div>
-      <div>Main</div>
-      <Link to="/form">폼으로 이동</Link>
-    </div>
+    <>
+      <Header />
+      <div className="w-full flex justify-center items-center max-w-[1920px] h-[764px] bg-orange-200">
+        TEOCON
+      </div>
+      <footer className="w-full"></footer>
+    </>
   )
 }
 export default Main
