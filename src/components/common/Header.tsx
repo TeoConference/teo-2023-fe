@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="w-full max-w-[509px] h-full max-h-6 flex justify-around ">
           <div>프로그램</div>
           <div>네트워킹</div>
-          <Link to="/form">폼으로 이동</Link>
+          <Link to="/form">명함</Link>
           <div>후원사</div>
           <div>장소</div>
           <div>FAQ</div>
