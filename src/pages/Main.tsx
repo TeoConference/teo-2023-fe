@@ -8,7 +8,7 @@ const Main = () => {
       <section className="w-full max-w-[1920px] flex-center flex-col h-[916px] mt-16 bg-orange-200">
         <div className="w-full max-w-[1360px]">
           <div className="font-Pretendard7 text-[5rem]">TEOCONE</div>
-          <div className="">테오의 컨퍼런스</div>
+          <div className="cutomH1">테오의 컨퍼런스</div>
           <div>23.05.20 토요일, 사람인 카페</div>
         </div>
       </section>
