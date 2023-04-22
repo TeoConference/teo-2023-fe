@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/teo-2023-fe/static/css/main.1003fa58.css",
-    "main.js": "/teo-2023-fe/static/js/main.74fc8a0a.js",
+    "main.css": "/teo-2023-fe/static/css/main.506c3cb9.css",
+    "main.js": "/teo-2023-fe/static/js/main.28b419f6.js",
+    "static/media/Pretendard-Black.otf": "/teo-2023-fe/static/media/Pretendard-Black.2017bdd775a38f0779e2.otf",
+    "static/media/Pretendard-Thin.otf": "/teo-2023-fe/static/media/Pretendard-Thin.6c732c788300615e6a65.otf",
     "static/media/SampleAnimal.png": "/teo-2023-fe/static/media/SampleAnimal.928f0a9828a7fcbff2a9.png",
     "index.html": "/teo-2023-fe/index.html",
     "static/media/QR.svg": "/teo-2023-fe/static/media/QR.6fba5e226697c6eae88dabb68c02020a.svg",
-    "main.1003fa58.css.map": "/teo-2023-fe/static/css/main.1003fa58.css.map",
-    "main.74fc8a0a.js.map": "/teo-2023-fe/static/js/main.74fc8a0a.js.map"
+    "main.506c3cb9.css.map": "/teo-2023-fe/static/css/main.506c3cb9.css.map",
+    "main.28b419f6.js.map": "/teo-2023-fe/static/js/main.28b419f6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1003fa58.css",
-    "static/js/main.74fc8a0a.js"
+    "static/css/main.506c3cb9.css",
+    "static/js/main.28b419f6.js"
   ]
 }
