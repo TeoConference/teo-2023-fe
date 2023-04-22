@@ -4,15 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Pretendard1: ['Pretendard1'],
-        Pretendard2: ['Pretendard2'],
-        Pretendard3: ['Pretendard3'],
-        Pretendard4: ['Pretendard4'],
-        Pretendard5: ['Pretendard5'],
-        Pretendard6: ['Pretendard6'],
-        Pretendard7: ['Pretendard7'],
-        Pretendard8: ['Pretendard8'],
-        Pretendard9: ['Pretendard9'],
+        Pretendard1: ['Pretendard-Thin'],
+        Pretendard2: ['Pretendard-ExtraLight'],
+        Pretendard3: ['Pretendard-Light'],
+        Pretendard4: ['Pretendard-Regular'],
+        Pretendard5: ['Pretendard-Medium'],
+        Pretendard6: ['Pretendard-SemiBold'],
+        Pretendard7: ['Pretendard-Bold'],
+        Pretendard8: ['Pretendard-ExtraBold'],
+        Pretendard8: ['Pretendard-Black'],
       },
     },
     screens: {
