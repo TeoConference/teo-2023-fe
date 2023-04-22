@@ -5,8 +5,12 @@ const Main = () => {
   return (
     <>
       <Header />
-      <section className="w-full max-w-[1920px] flex-center h-[916px] mt-16 bg-orange-200">
-        TEOCON
+      <section className="w-full max-w-[1920px] flex-center flex-col h-[916px] mt-16 bg-orange-200">
+        <div className="w-full max-w-[1360px]">
+          <div className="font-Pretendard7 text-[5rem]">TEOCONE</div>
+          <div className="">테오의 컨퍼런스</div>
+          <div>23.05.20 토요일, 사람인 카페</div>
+        </div>
       </section>
       <section className="w-full h-[1264px] flex-center desktop:bg-rose-950 text-white">
         모두에게 열려있는 컨퍼런스
