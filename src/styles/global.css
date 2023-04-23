@@ -58,9 +58,10 @@
 @layer base {
   body,
   #root {
+    font-family: Pretendard-Regular, system-ui, Arial;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
   }
 }

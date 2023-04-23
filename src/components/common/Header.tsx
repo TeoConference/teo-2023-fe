@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
-    <header className="w-full h-16 bg-slate-500 flex justify-center items-center fixed">
-      <nav className="w-full max-w-[1360px] flex bg-red-300 justify-end">
-        <div className="w-full max-w-[509px] h-full max-h-6 flex justify-around ">
+    <header className="w-full h-16 bg-white flex justify-center items-center sticky top-0 text-[16px] z-50">
+      <nav className="w-full max-w-[1360px] flex  justify-between">
+        <div className="font-extrabold">TEOConf</div>
+        <div className="inline-flex space-x-10 items-end justify-start">
           <div>프로그램</div>
           <div>네트워킹</div>
           <Link to="/form">명함</Link>
