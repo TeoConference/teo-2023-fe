@@ -122,4 +122,4 @@ const Introduce = () => (
   </section>
 )
 
-export default FAQ
+export default Introduce
