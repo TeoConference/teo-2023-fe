@@ -7,11 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      fontFamily: {
+        Pretendard1: ['Pretendard-Thin'],
+        Pretendard2: ['Pretendard-ExtraLight'],
+        Pretendard3: ['Pretendard-Light'],
+        Pretendard4: ['Pretendard-Regular'],
+        Pretendard5: ['Pretendard-Medium'],
+        Pretendard6: ['Pretendard-SemiBold'],
+        Pretendard7: ['Pretendard-Bold'],
+        Pretendard8: ['Pretendard-ExtraBold'],
+        Pretendard8: ['Pretendard-Black'],
+      }
+    },
+    screens: {
+      desktop: '1024px',
+      tablet: '768px',
     },
   },
   plugins: [],
