@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <header className="w-full h-16 bg-white flex justify-center items-center sticky top-0 text-[16px] z-50">
+    <header className="w-full h-16 bg-white flex justify-center items-center sticky top-0 text-[16px] z-50 p-4">
       <nav className="w-full max-w-[1360px] flex  justify-between">
         <div className="font-extrabold">TEOConf</div>
         <div className="inline-flex space-x-10 items-end justify-start">
