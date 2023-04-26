@@ -2,7 +2,7 @@
 
 ```bash
 yarn
-yarn start
+yarn dev
 ```
 
 ### Commit Message
