@@ -1,8 +1,9 @@
 import React from 'react'
+import Image from 'next/image'
 
-import { ReactComponent as QR } from "../../public/images/QR.svg"
-import animal from 'assets/images/SampleAnimal.png'
-import { FormData } from '../../types'
+import { ReactComponent as QR } from '@/public/images/QR.svg'
+import Animal from '@/assets/images/SampleAnimal.png'
+import { FormData } from '@/types'
 
 const Card = (props: FormData) => {
   const {
@@ -36,8 +37,8 @@ const Card = (props: FormData) => {
             <span key={hashTag}>#{hashTag}</span>
           ))}
         </div>
-        <img
-          src={animal}
+        <Image
+          src={Animal}
           alt="animal"
           className="w-24 h-24 absolute bottom-0 right-0 transform translate-y-4 translate-x-2"
         />
