@@ -1,23 +1,24 @@
-import Image from 'next/image'
+import React from 'react'
 import { Inter } from 'next/font/google'
-import FAQ from '../components/FAQ'
-import Header from '../components/Header'
-import Introduce from '../components/Introduce'
-import Program from '../components/Program'
-import Networking from '../components/NetWorking'
-import NameCard from '../components/NameCard'
-import Sponsor from '../components/Sponsor'
-import Map from '../components/Map'
-import SNS from '../components/SNS'
-import Staff from '../components/Staff'
-import Footer from '../components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+import Header from '@/components/Header'
+import FAQ from '@/components/FAQ'
+import Introduce from '@/components/Introduce'
+import Program from '@/components/Program'
+import Networking from '@/components/NetWorking'
+import NameCard from '@/components/NameCard'
+import Sponsor from '@/components/Sponsor'
+import Map from '@/components/Map'
+import SNS from '@/components/SNS'
+import Staff from '@/components/Staff'
+import Footer from '@/components/Footer'
+import Banner from '@/components/Banner'
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Banner />
       <Introduce />
       <Program />
       <Networking />
