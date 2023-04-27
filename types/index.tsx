@@ -9,3 +9,8 @@ export type FormData = {
   colorType?: string
   email?: string
 }
+
+export type FAQ = {
+  question: string
+  answer: string
+}
