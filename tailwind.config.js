@@ -17,7 +17,7 @@ module.exports = {
         Pretendard7: ['Pretendard-Bold'],
         Pretendard8: ['Pretendard-ExtraBold'],
         Pretendard8: ['Pretendard-Black'],
-      }
+      },
     },
     screens: {
       desktop: '1024px',
