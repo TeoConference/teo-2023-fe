@@ -5,7 +5,7 @@ import { talkData } from '@/data/Talk'
 
 const SwiperSlide = () => {
   return (
-    <ul className="animate-moveLeft flex justify-between gap-10">
+    <ul className="animate-moveLeft flex justify-between gap-10 ml-10">
       {talkData.map((talk, i) => (
         <Talk
           key={i}
