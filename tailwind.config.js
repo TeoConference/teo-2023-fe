@@ -20,8 +20,19 @@ module.exports = {
       },
     },
     screens: {
+      'desktop-xl': '1920px',
       desktop: '1024px',
       tablet: '768px',
+      mobile: '640px',
+    },
+    keyframes: {
+      moveLeft: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+    },
+    animation: {
+      moveLeft: 'moveLeft 20s linear infinite',
     },
   },
   plugins: [],
