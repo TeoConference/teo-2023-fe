@@ -18,7 +18,9 @@ const Map = () => {
             신촌역 3번출구에서 300M 내에 위치하고 있습니다!
           </p>
         </div>
-        <KakaoMap latitude={37.55759668300872} longitude={126.93709078486495} />
+        <div className='w-full desktop:max-w-[1360px]'>
+          <KakaoMap latitude={37.55759668300872} longitude={126.93709078486495} />
+        </div>
       </div>
     </div>
   )
