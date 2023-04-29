@@ -2,14 +2,8 @@ import React from 'react'
 
 const Staff = () => (
   <section className="flex flex-col space-y-20 items-center justify-start py-36">
-    <div
-      className="flex flex-col space-y-4 items-center justify-start"
-      style={{ width: 539, height: 111 }}
-    >
-      <div
-        className="inline-flex space-x-2.5 items-start justify-start"
-        style={{ width: 539, height: 56 }}
-      >
+    <div className="flex flex-col space-y-4 items-center justify-start">
+      <div className="inline-flex space-x-2.5 items-start justify-start">
         <p className="text-5xl font-bold leading-10 text-center">
           테오콘을 만들어가는
         </p>
@@ -21,7 +15,7 @@ const Staff = () => (
         테오콘을 함께 만든 스태프를 소개합니다!
       </p>
     </div>
-    <div className="inline-flex space-x-5 items-start justify-start">
+    <div className="flex space-x-5 overflow-x-auto w-full desktop:justify-center">
       {[1, 2, 3, 4].map((_, index) => (
         <div
           key={index}
