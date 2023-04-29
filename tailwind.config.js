@@ -32,7 +32,7 @@ module.exports = {
       },
     },
     animation: {
-      moveLeft: 'moveLeft 20s linear infinite',
+      moveLeft: 'moveLeft 30s linear infinite',
     },
   },
   plugins: [],
