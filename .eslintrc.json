@@ -1,24 +1,7 @@
 {
-  "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "react",
-    "react-hooks",
-    "jsx-a11y",
-    "import",
-    "prettier"
-  ],
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:import/recommended",
-    "prettier"
-  ],
+  "extends": ["next", "prettier", "next/core-web-vitals"],
+  "plugins": ["prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "import/no-unresolved": "off"
+    "prettier/prettier": "error"
   }
 }
