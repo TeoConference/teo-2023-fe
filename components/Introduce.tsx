@@ -5,7 +5,7 @@ import SwiperSlide from '@/components/introduce/SwiperSlide'
 const Introduce = () => {
   return (
     <section className="flex-col w-full flex-center py-[180px] tablet:px-32 px-8">
-      <div className="flex flex-col space-y-12 items-center justify-start">
+      <div className="desktop:w-[1360px] flex flex-col space-y-12 items-center justify-start">
         <div className="flex flex-col space-y-6 items-center justify-start">
           <p className="tablet:text-5xl text-3xl font-bold leading-10 text-center">
             모두에게 열려있는 컨퍼런스
@@ -25,7 +25,7 @@ const Introduce = () => {
           기획되었어요!
         </p>
       </div>
-      <div className="bg-gray-100 rounded-3xl mt-[76px] desktop-xl:w-[1360px] w-full h-[630px]">
+      <div className="bg-gray-100 rounded-3xl mt-[76px] desktop:w-[1360px] w-full h-[630px]">
         <div className="overflow-hidden">
           <p className="m-auto w-full tablet:text-4xl text-2xl mt-16 font-bold leading-10 text-center">
             언제나 궁금했던 이야기들

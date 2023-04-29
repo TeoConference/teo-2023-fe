@@ -2,7 +2,7 @@ import React from 'react'
 
 const Program = () => (
   <section className="bg-gray-100">
-    <div className="flex flex-col space-y-12 justify-center px-8 py-36 max-w-[1360px] mx-auto">
+    <div className="flex flex-col space-y-12 justify-center px-8 py-36 desktop:w-[1360px] mx-auto">
       <div className="flex flex-col space-y-12 items-center justify-start">
         <div className="flex flex-col space-y-4 items-center justify-start">
           <p className="text-5xl font-bold leading-10 text-center">프로그램</p>
