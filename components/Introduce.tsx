@@ -30,7 +30,7 @@ const Introduce = () => {
           <p className="m-auto w-full tablet:text-4xl text-2xl mt-16 font-bold leading-10 text-center">
             언제나 궁금했던 이야기들
           </p>
-          <div className="mt-12 flex gap-10">
+          <div className="mt-12 flex">
             <SwiperSlide />
             <SwiperSlide />
             <SwiperSlide />
