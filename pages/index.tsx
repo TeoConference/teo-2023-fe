@@ -13,10 +13,13 @@ import SNS from '@/components/SNS'
 import Staff from '@/components/Staff'
 import Footer from '@/components/Footer'
 import Banner from '@/components/Banner'
+import Head from 'next/head'
+import MetaHead from '@/components/common/MetaHead'
 
 export default function Home() {
   return (
     <>
+      <MetaHead />
       <Header />
       <Banner />
       <Introduce />
