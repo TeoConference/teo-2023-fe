@@ -1,8 +1,10 @@
-import React from 'react'
+import Image from 'next/image'
+import Logo from '../public/images/Logo.png'
 
 const Footer = () => (
   <footer className="w-full h-[310px] py-[90px] bg-gray-100 px-8">
-    <div className="max-w-[1360px] mx-auto">
+    <div className="max-w-[1360px] mx-auto space-y-4">
+      <Image alt="logo" src={Logo} width={150} height={25.96} />
       <p className="text-base font-bold leading-normal text-gray-500">
         ⓒ TEOCONF. All Right Reserved.
       </p>
