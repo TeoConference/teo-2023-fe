@@ -77,11 +77,10 @@ const Icon = (index: number) => {
 const Introduce = () => {
   return (
     <section className="flex-col w-full flex-center mobile:py-[11.25rem] py-[4.125rem] tablet:px-32 px-4">
-      <div className="flex flex-col mobile:space-y-12 items-center justify-start mobile:max-w-[33.43rem] max-w-[19.25rem]">
+      <div className="flex flex-col mobile:space-y-12 items-center justify-start mobile:max-w-[34rem] max-w-[19.25rem]">
         <div className="flex flex-col mobile:space-y-6 space-y-2 items-center justify-start">
           <p className="mobile:text-h1 text-mobile-h1 leading-10 text-center">
-            모두에게
-            <br className="block mobile:hidden" />
+            모두에게 <br className="block mobile:hidden" />
             열려있는 컨퍼런스
           </p>
           <p className="mobile:text-h3 text-mobile-h2 text-center text-gray-900">
@@ -105,36 +104,36 @@ const Introduce = () => {
             언제나 궁금했던 이야기들
           </p>
           <div className="mobile:mt-12 mt-6 flex">
-            <SwiperSlide className="flex justify-between gap-10 ml-12">
+            <SwiperSlide className="flex justify-between gap-10">
               {talkData.map((talk, i) => (
                 <Talk
                   key={i}
                   contents={talk.contents}
                   speaker={talk.speaker}
                   Icon={Icon(i)}
-                  classNames={i % 2 ? 'mt-10' : ''}
+                  classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
                 />
               ))}
             </SwiperSlide>
-            <SwiperSlide className="flex justify-between gap-10 ml-10">
+            <SwiperSlide className="flex justify-between gap-10">
               {talkData.map((talk, i) => (
                 <Talk
                   key={i}
                   contents={talk.contents}
                   speaker={talk.speaker}
                   Icon={Icon(i)}
-                  classNames={i % 2 ? 'mt-10' : ''}
+                  classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
                 />
               ))}
             </SwiperSlide>
-            <SwiperSlide className="flex justify-between gap-10 ml-10">
+            <SwiperSlide className="flex justify-between gap-10">
               {talkData.map((talk, i) => (
                 <Talk
                   key={i}
                   contents={talk.contents}
                   speaker={talk.speaker}
                   Icon={Icon(i)}
-                  classNames={i % 2 ? 'mt-10' : ''}
+                  classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
                 />
               ))}
             </SwiperSlide>
