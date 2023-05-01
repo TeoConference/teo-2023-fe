@@ -17,7 +17,7 @@ export const talkData: TalkData[] = [
     speaker: '주니어 BE개발자',
   },
   {
-    contents: '사이드 프로젝트 팀원을\n구하고 싶은데...',
+    contents: '사이드 프로젝트\n팀원을 구하고 싶은데...',
     speaker: 'FE개발자',
   },
 ]
