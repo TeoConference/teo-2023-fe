@@ -1,24 +1,48 @@
 import Image from 'next/image'
 import React from 'react'
 import TeoBI from '../public/images/TeoBI.png'
+import TeoBI2 from '../public/images/TeoBI2.png'
+import Mouse from '../public/images/Mouse.png'
+import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined'
+import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined'
 
 const Banner = () => {
   return (
-    <section className="bg-black text-white h-[calc(100vh_-_3rem)] mobile:h-[calc(100vh_-_4rem)] flex-center">
-      <div className="desktop:w-[1360px] flex flex-col h-full justify-end desktop:pb-40">
-        <Image
-          className="mt-36 ml-auto px-4"
-          alt="TeoBI"
-          src={TeoBI}
-          width={461.36}
-          height={281}
-        />
-        <h1 className="font-Pretendard6 mt-auto text-6xl tablet:text-7xl font-bold mb-7 px-4">
-          TEOConf 2023
-        </h1>
-        <div className="font-Pretendard6 text-xl tablet:text-5xl flex flex-col mt-10 tablet:px-4 pb-4">
-          <span>테오의 컨퍼런스</span>
-          <span>23.05.20 토요일, 사람인 카페</span>
+    <section className="bg-black text-white desktop:h-[calc(100vh_-_3rem)] h-[640px] tablet:h-[894px] flex-center relative">
+      <div className="w-full h-full flex-center flex-col tablet:justify-between desktop:justify-around desktop:max-w-[1360px] desktop:mt-50">
+        <div className="w-full tablet:pt-16 tablet:pl-16 desktop:hidden">
+          <Image
+            className="w-[126px] h-[125px] ml-[-48px] tablet:w-[192px] tablet:h-[192px] tablet:ml-0"
+            alt="TeoBI2"
+            src={TeoBI2}
+          />
+        </div>
+        <div className="hidden desktop:flex w-full justify-end">
+          <Image className="w-[461px] h-[281px]" alt="TeoBI" src={TeoBI} />
+        </div>
+        <div className="z-[1] mt-[-30px] tablet:mt-0 desktop:w-full desktop:flex desktop:flex-col desktop:items-start desktop:space-y-20">
+          <h1 className="font-Pretendard7 text-[3.75rem] tablet:text-[4.375rem] desktop:text-[5rem] leading-[56px] tracking-[-0.6%] text-center desktop:text-right">
+            TEOConf 2023
+          </h1>
+          <div className="font-Pretendard6 text-[1.375rem] tablet:text-[2.375rem] desktop:text-[3rem] space-y-2 tracking-[-0.6%] mt-7">
+            <div className="text-center desktop:text-left">테오의 컨퍼런스</div>
+            <div className="text-center desktop:text-left">
+              23.05.20 토요일, 사람인 카페
+            </div>
+          </div>
+        </div>
+        <div className="absolute bottom-0 right-0 tablet:relative tablet:w-full tablet:flex tablet:justify-end tablet:mr-16 desktop:hidden">
+          <Image className="w-[302px] h-[184px]" alt="TeoBI" src={TeoBI} />
+        </div>
+        <div className="w-full flex-center desktop:justify-end">
+          <Image
+            className="hidden desktop:block desktop:mr-2"
+            alt="scrollDown"
+            src={Mouse}
+            width={26}
+            height={54}
+          />
+          <KeyboardDoubleArrowDownOutlinedIcon className="absolute bottom-20  tablet:hidden" />
         </div>
       </div>
     </section>
