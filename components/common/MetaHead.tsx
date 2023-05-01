@@ -11,7 +11,7 @@ const MetaHead = () => {
         content="모두에게 열려있는 컨퍼런스, 테오콘-TeoConf"
       />
       {/* Facebook Meta Tags  */}
-      <meta property="og:title" content="코듀온" />
+      <meta property="og:title" content="테오콘-TeoConf23" />
       <meta property="og:url" content={'https://teo-2023-fe.vercel.app/'} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="images/logo.png" />
@@ -25,7 +25,7 @@ const MetaHead = () => {
         property="twitter:url"
         content={'https://teo-2023-fe.vercel.app/'}
       />
-      <meta name="twitter:title" content="코듀온" />
+      <meta name="twitter:title" content="테오콘-TeoConf23" />
       <meta
         name="twitter:description"
         content="모두에게 열려있는 컨퍼런스, 테오콘-TeoConf"
