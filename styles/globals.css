@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: 'Pretendard-Thin';
   src: url('../public/fonts/Pretendard-Thin.otf');
@@ -63,30 +62,6 @@
 @layer components {
   .flex-center {
     @apply flex justify-center items-center;
-  }
-  .customH1 {
-    @apply font-Pretendard7 text-[50px] leading-[56px] tracking-[-0.6%]
-  }
-  .customH2 {
-    @apply font-Pretendard7 text-[40px] leading-[46px] tracking-[-0.6%]
-  }
-  .customH3 {
-    @apply font-Pretendard7 text-[26px] leading-[39px] tracking-[-0.6%]
-  }
-  .body1 {
-    @apply font-Pretendard7 text-[21px] leading-[37px] tracking-[-0.6%]
-  }
-  .body2 {
-    @apply font-Pretendard7 text-[16px] leading-[24px] tracking-[-0.6%]
-  }
-  .body3 {
-    @apply font-Pretendard7 text-[13px] leading-[21px] tracking-[-0.6%]
-  }
-  .subH1 {
-    @apply font-Pretendard7 text-[21px] leading-[37px] tracking-[-0.6%]
-  }
-  .subH2 {
-    @apply font-Pretendard7 text-[16px] leading-[24px] tracking-[-0.6%]
   }
 }
 
