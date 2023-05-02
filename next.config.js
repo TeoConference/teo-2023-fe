@@ -2,6 +2,7 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  important: true,
 }
 
 module.exports = nextConfig
