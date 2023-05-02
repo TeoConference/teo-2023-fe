@@ -3,59 +3,69 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Pretendard-Thin';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-Thin.otf');
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: 'Pretendard-ExtraLight';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-ExtraLight.otf');
+  font-weight: 200;
 }
 
 @font-face {
-  font-family: 'Pretendard-Light';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-Light.otf');
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Pretendard-Regular';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-Regular.otf');
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: 'Pretendard-Medium';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-Medium.otf');
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Pretendard-SemiBold';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-SemiBold.otf');
+  font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Pretendard-Bold';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-Bold.otf');
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Pretendard-ExtraBold';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-ExtraBold.otf');
+  font-weight: 800;
 }
 
 @font-face {
-  font-family: 'Pretendard-Black';
+  font-family: 'Pretendard';
   src: url('../public/fonts/Pretendard-Black.otf');
+  font-weight: 900;
 }
 
 @layer base {
   body,
   #root {
-    font-family: Pretendard-Regular, system-ui, Arial;
+    font-family: Pretendard, system-ui, Arial;
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+    font-size: 62.5%;
   }
 }
 
