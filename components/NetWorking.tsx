@@ -1,58 +1,76 @@
+import Image from 'next/image'
 import React from 'react'
 
+import Networking1 from '@/public/images/Networking1.svg'
+import Networking2 from '@/public/images/Networking2.svg'
+import Networking3 from '@/public/images/Networking3.svg'
+
 const Networking = () => (
-  <div className="flex flex-col space-y-20 items-center  py-[180px]">
-    <div className="flex flex-col space-y-12 items-center justify-start">
-      <div className="flex flex-col space-y-4 items-center justify-start">
-        <p className="text-5xl font-bold leading-10 text-center">네트워킹</p>
-        <p className="text-2xl font-bold leading-10 text-center">
-          명함 굿즈를 통해서 자연스럽게 좋은 사람들을 찾고 연락처를
-          공유해보세요!
+  <div className="space-y-6 py-[180px] w-full">
+    <div className="flex flex-col space-y-12 items-center">
+      <div className="flex flex-col space-y-4 items-center">
+        <p className="text-mobile-h1 tablet:text-h1">네트워킹</p>
+        <p className="text-mobile-h2 text-center tablet:text-h3 ">
+          명함 굿즈를 통해서 자연스럽게
+          <br className="block tablet:hidden" />
+          좋은 사람들을 찾고 연락처를 공유해보세요!
         </p>
       </div>
     </div>
-    <div className="flex tablet:space-x-5 flex-wrap">
-      <div className="flex flex-col space-y-8 desktop:w-[280px] desktop-xl:w-[440px]">
-        <div className="bg-gray-100 rounded-lg w-full desktop:h-[240px] desktop-xl:h-[380px]" />
-        <div className="flex flex-col space-y-4">
-          <div className="flex flex-col space-y-1.5">
-            <p className="text-2xl font-bold leading-10 text-gray-900">
+    <div className="flex space-x-5 overflow-x-auto ml-4 tablet:ml-28">
+      <div className="flex flex-col space-y-4 tablet:space-y-6 w-[280px]">
+        <div className="bg-gray-900 flex items-center justify-center rounded-lg w-[280px] h-[240px]">
+          <Image
+            src={Networking1}
+            alt="networking image"
+            width="84"
+            height="100"
+          />
+        </div>
+        <div className="flex flex-col space-y-2">
+          <div className="flex flex-col">
+            <p className="text-mobile-h2 text-gray-900">
               개발자가 되고 싶어요!
             </p>
-            <p className="text-base font-bold leading-normal text-gray-900">
+            <p className="text-mobile-sub-h2 text-gray-900">
               취준생을 위한 네트워킹
             </p>
           </div>
-          <div className="inline-flex space-x-2">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
-              <p className="text-xs leading-tight text-gray-900">#취업</p>
+          <div className="inline-flex space-x-2 text-mobile-body2">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-purple-200 rounded">
+              <p className="text-gray-900">#취업</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
-              <p className="text-xs leading-tight text-gray-900">#개발입문</p>
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-purple-200 rounded">
+              <p className="text-gray-900">#개발입문</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col space-y-8 desktop:w-[280px] desktop-xl:w-[440px]">
-        <div className="bg-gray-100 rounded-lg w-full desktop:h-[240px] desktop-xl:h-[380px]" />
-        <div className="flex flex-col space-y-4 whitespace-nowrap">
-          <div className="flex flex-col space-y-1.5">
-            <p className="text-2xl font-bold leading-10 text-gray-900">
-              성장하고 싶어요!
-            </p>
-            <p className="text-base font-bold leading-normal text-gray-900">
+      <div className="flex flex-col space-y-4 w-[280px]">
+        <div className="bg-gray-900 flex items-center justify-center rounded-lg w-[280px] h-[240px]">
+          <Image
+            src={Networking2}
+            alt="networking image"
+            width="84"
+            height="100"
+          />
+        </div>{' '}
+        <div className="flex flex-col space-y-2 whitespace-nowrap">
+          <div className="flex flex-col">
+            <p className="text-mobile-h2 text-gray-900">성장하고 싶어요!</p>
+            <p className="text-mobile-sub-h2 text-gray-900">
               신입과 주니어를 위한 네트워킹
             </p>
           </div>
-          <div className="inline-flex space-x-2 whitespace-nowrap">
+          <div className="inline-flex space-x-2 text-mobile-body2 whitespace-nowrap">
             <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
-              <p className="text-xs leading-tight text-gray-900">#회사문화</p>
+              <p className="text-gray-900">#회사문화</p>
             </div>
             <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
-              <p className="text-xs leading-tight text-gray-900">#자기계발</p>
+              <p className="text-gray-900">#자기계발</p>
             </div>
             <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
-              <p className="text-xs leading-tight text-gray-900">#성장</p>
+              <p className="text-gray-900">#성장</p>
             </div>
           </div>
         </div>
