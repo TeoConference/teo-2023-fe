@@ -21,10 +21,10 @@ const Banner = () => {
           <Image className="w-[461px] h-[281px]" alt="TeoBI" src={TeoBI} />
         </div>
         <div className="z-[1] mt-[-30px] tablet:mt-0 desktop:w-full desktop:flex desktop:flex-col desktop:items-start desktop:space-y-20">
-          <h1 className="font-Pretendard7 text-[3.75rem] tablet:text-[4.375rem] desktop:text-[5rem] leading-[56px] tracking-[-0.6%] text-center desktop:text-right">
+          <h1 className="font-Pretendard font-bold text-[3.75rem] tablet:text-[4.375rem] desktop:text-[5rem] leading-[56px] tracking-[-0.6%] text-center desktop:text-right">
             TEOConf 2023
           </h1>
-          <div className="font-Pretendard6 text-[1.375rem] tablet:text-[2.375rem] desktop:text-[3rem] space-y-2 tracking-[-0.6%] mt-7">
+          <div className="font-Pretendard font-semibold text-[1.375rem] tablet:text-[2.375rem] desktop:text-[3rem] space-y-2 tracking-[-0.6%] mt-7">
             <div className="text-center desktop:text-left">테오의 컨퍼런스</div>
             <div className="text-center desktop:text-left">
               23.05.20 토요일, 사람인 카페
