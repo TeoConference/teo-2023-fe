@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
+
 import TeoBI from '../public/images/TeoBI.png'
 import TeoBI2 from '../public/images/TeoBI2.png'
-import Mouse from '../public/images/Mouse.png'
-import MouseOutlinedIcon from '@mui/icons-material/MouseOutlined'
+import Mouse from '@/public/images/Mouse.svg'
+import Down from '@/public/images/Down.svg'
 import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined'
 
 const Banner = () => {
@@ -20,7 +21,7 @@ const Banner = () => {
         <div className="hidden desktop:flex w-full justify-end">
           <Image className="w-[461px] h-[281px]" alt="TeoBI" src={TeoBI} />
         </div>
-        <div className="z-[1] mt-[-30px] tablet:mt-0 desktop:w-full desktop:flex desktop:flex-col desktop:items-start desktop:space-y-20">
+        <div className="z-[1] mt-[-30px] px-2 tablet:mt-0 desktop:w-full desktop:flex desktop:flex-col desktop:items-start desktop:space-y-20">
           <h1 className="font-Pretendard font-bold text-[3.75rem] tablet:text-[4.375rem] desktop:text-[5rem] leading-[56px] tracking-[-0.6%] text-center desktop:text-right">
             TEOConf 2023
           </h1>
@@ -35,14 +36,17 @@ const Banner = () => {
           <Image className="w-[302px] h-[184px]" alt="TeoBI" src={TeoBI} />
         </div>
         <div className="w-full flex-center desktop:justify-end">
-          <Image
-            className="hidden desktop:block desktop:mr-2"
-            alt="scrollDown"
-            src={Mouse}
-            width={26}
-            height={54}
-          />
-          <KeyboardDoubleArrowDownOutlinedIcon className="absolute bottom-20  tablet:hidden" />
+          <div className="hidden gap-2 mr-4 desktop:block">
+            <Image alt="scroll down" src={Mouse} width={26} height={40} />
+            <Image
+              className="m-auto mt-2 desktop:animate-bounce"
+              alt="scroll down"
+              src={Down}
+              width={12}
+              height={12}
+            />
+          </div>
+          <KeyboardDoubleArrowDownOutlinedIcon className="absolute bottom-20 animate-bounce tablet:hidden" />
         </div>
       </div>
     </section>

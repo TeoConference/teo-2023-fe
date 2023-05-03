@@ -79,15 +79,15 @@ const Introduce = () => {
     <section className="flex-col w-full flex-center mobile:py-[11.25rem] py-[4.125rem] tablet:px-32 px-4">
       <div className="flex flex-col mobile:space-y-12 items-center justify-start mobile:max-w-[34rem] max-w-[19.25rem]">
         <div className="flex flex-col mobile:space-y-6 space-y-2 items-center justify-start">
-          <p className="mobile:text-h1 text-mobile-h1 leading-10 text-center">
-            모두에게 <br className="block mobile:hidden" />
+          <p className="tablet:text-h1 text-mobile-h1 leading-10 text-center">
+            모두에게 <br className="block tablet:hidden" />
             열려있는 컨퍼런스
           </p>
-          <p className="mobile:text-h3 text-mobile-h2 text-center text-gray-900">
+          <p className="tablet:text-h3 text-mobile-h2 text-center text-gray-900">
             테오의 스프린트가 컨퍼런스로 돌아왔어요!
           </p>
         </div>
-        <p className="tablet:text-body1 tablet:leading-9 leading-7 mt-6 text-center text-gray-900">
+        <p className="tablet:text-body1 text-mobile-body2 text-center mt-6 text-gray-900">
           테오의 컨퍼런스는{' '}
           <strong className="text-green-main rounded-lg">
             &quot;모두에게 열려있는 컨퍼런스&quot;
