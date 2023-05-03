@@ -13,14 +13,15 @@ const NameCard = () => (
       </div>
       <div className="bg-name-card max-w-[1300px] bg-cover rounded-lg h-[250px] tablet:h-[280px] desktop:h-[367px] w-full" />
     </div>
-    <button
-      type="button"
+    <a
+      href="https://festa.io/events/3428"
+      target="_blank"
       className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 rounded-full"
     >
       <p className="text-mobile-body2 text-center text-white">
         자세히 알아보기
       </p>
-    </button>
+    </a>
   </section>
 )
 
