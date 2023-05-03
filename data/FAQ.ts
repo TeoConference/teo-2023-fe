@@ -34,3 +34,13 @@ export const faqData: FAQData = {
     },
   ],
 }
+
+export const NoticeData: FAQType[] = [
+  { question: 'question1', answer: 'answer1' },
+  { question: 'question1', answer: 'answer1' },
+]
+
+export const CodeOfConductData: FAQType[] = [
+  { question: 'question1', answer: 'answer1' },
+  { question: 'question1', answer: 'answer1' },
+]

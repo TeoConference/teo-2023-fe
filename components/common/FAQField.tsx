@@ -16,24 +16,29 @@ const FAQField = ({ question, answer }: FAQFieldProps) => {
   }
 
   return (
-    <div className="flex flex-col gap-2 w-full">
+    <div className="flex flex-col w-full">
       <div
-        className="flex justify-between cursor-pointer w-full space-x-2.5 items-center justify-start px-8 py-5 bg-gray-50 rounded-lg"
+        className={clsx(
+          'flex justify-between cursor-pointer w-full items-center px-4 py-2 tablet:py-4 bg-gray-50',
+          isOpen ? 'rounded-t-lg' : 'rounded-lg'
+        )}
         onClick={onClickFAQ}
         aria-expanded={isOpen}
       >
-        <p className="text-xl font-bold leading-9 text-gray-900">
-          Q. {question}
+        <p className="text-mobile-sub-h2 tablet:text-sub-h1 text-gray-900">
+          {question}
         </p>
         {isOpen ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
       </div>
       <div
         className={clsx(
-          'px-8 py-5 bg-gray-50 rounded-lg',
+          'px-4 py-2 bg-gray-50 rounded-b-lg',
           isOpen ? 'block' : 'hidden'
         )}
       >
-        <p className="text-xl font-bold leading-9 text-gray-900">A. {answer}</p>
+        <p className="text-mobile-body2 tablet:text-body2 text-gray-900 pb-2 tablet:pb-4">
+          {answer}
+        </p>
       </div>
     </div>
   )
