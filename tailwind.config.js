@@ -23,6 +23,9 @@ module.exports = {
       animation: {
         moveLeft: 'moveLeft 30s linear infinite',
       },
+      backgroundImage: {
+        'name-card': "url('/images/NameCard.svg')",
+      },
     },
     fontSize: {
       h1: ['3.125rem', { lineHeight: '3.5rem', fontWeight: 700 }],
