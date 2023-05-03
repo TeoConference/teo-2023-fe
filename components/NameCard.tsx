@@ -5,8 +5,10 @@ const NameCard = () => (
     <div className="flex flex-col space-y-8 items-center w-full">
       <div className="flex flex-col space-y-10 items-center">
         <div className="flex flex-col space-y-4 items-center">
-          <p className="text-mobile-h1 text-center">나만의 명함 만들기</p>
-          <p className="text-mobile-h2 text-center">
+          <p className="text-mobile-h1 tablet:text-h1 text-center">
+            나만의 명함 만들기
+          </p>
+          <p className="text-mobile-h2 tablet:text-h3 text-center">
             나를 소개하는 멋진 명함을 만들어보세요!
           </p>
         </div>
