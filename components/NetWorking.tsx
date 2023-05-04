@@ -36,10 +36,10 @@ const Networking = () => (
             </p>
           </div>
           <div className="inline-flex space-x-2 text-mobile-body2 tablet:text-body3">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-purple-200 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-purple rounded">
               <p className="text-gray-900">#취업</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-purple-200 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-purple rounded">
               <p className="text-gray-900">#개발입문</p>
             </div>
           </div>
@@ -64,13 +64,13 @@ const Networking = () => (
             </p>
           </div>
           <div className="inline-flex space-x-2 text-mobile-body2 tablet:text-body3">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green rounded">
               <p className="text-gray-900">#회사문화</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green rounded">
               <p className="text-gray-900">#자기계발</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-green-200 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green rounded">
               <p className="text-gray-900">#성장</p>
             </div>
           </div>
@@ -95,13 +95,13 @@ const Networking = () => (
             </p>
           </div>
           <div className="inline-flex space-x-2 text-mobile-body2 tablet:text-body3">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-red-300 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-red rounded">
               <p className="text-gray-900">#행사기획</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-red-300 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-red rounded">
               <p className="text-gray-900">#외부활동</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-red-300 rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-red rounded">
               <p className="text-gray-900">#경험공유</p>
             </div>
           </div>
