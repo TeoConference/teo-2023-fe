@@ -15,7 +15,7 @@ const Sponsor = () => (
             후원합니다.
           </p>
           <p className="hidden tablet:block font-Pretendard font-bold text-[1.625rem] mt-8">
-            테오의 컨퍼런스 1기는 사림인의 &apos;점핏&apos;에서 후원합니다.
+            테오의 컨퍼런스 1기는 사람인의 &apos;점핏&apos;에서 후원합니다.
           </p>
         </div>
       </div>
