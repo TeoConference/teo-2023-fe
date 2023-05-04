@@ -13,6 +13,9 @@ module.exports = {
       },
       colors: {
         'green-main': '#00DE4F',
+        'networking-purple': '#DDD4FC',
+        'networking-green': '#96F8C0',
+        'networking-red': '#FFB6B6',
       },
       keyframes: {
         moveLeft: {
