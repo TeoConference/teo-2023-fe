@@ -12,15 +12,27 @@ const SNS = () => (
         테오콘 소식을 <br className="block tablet:hidden" /> 더 빨리 알고 싶다면
       </p>
       <div className="flex mt-6 tablet:mt-14 gap-4">
-        <div className="flex p-3 tablet:p-4 bg-white rounded-lg">
-          <Image src={LinkedIn} alt="linkedin 링크" className="h-full" />
-        </div>
-        <div className="flex p-3 tablet:p-4 bg-white rounded-lg">
-          <Image src={Twitter} alt="twitter 링크" className="h-full" />
-        </div>
-        <div className="flex p-3 tablet:p-4 bg-white rounded-lg">
-          <Image src={Instagram} alt="instagram 링크" className="h-full" />
-        </div>
+        <a
+          href="https://www.linkedin.com/company/teocon-2023"
+          target="_blank"
+          className="flex p-3 tablet:p-4 bg-white rounded-lg"
+        >
+          <Image src={LinkedIn} alt="linkedin 바로가기" className="h-full" />
+        </a>
+        <a
+          href="https://twitter.com/TEOCON_2023"
+          target="_blank"
+          className="flex p-3 tablet:p-4 bg-white rounded-lg"
+        >
+          <Image src={Twitter} alt="twitter 바로가기" className="h-full" />
+        </a>
+        <a
+          href="https://www.instagram.com/teo_conf/"
+          target="_blank"
+          className="flex p-3 tablet:p-4 bg-white rounded-lg"
+        >
+          <Image src={Instagram} alt="instagram 바로가기" className="h-full" />
+        </a>
       </div>
     </div>
   </div>
