@@ -9,7 +9,7 @@ export const faqData: FAQData = {
     {
       question: '등록이 잘 되었는지 어떻게 확인할 수 있나요?',
       answer:
-        '등록이 잘 되었다면 신청하신 이메일로 리마인드 알림을 발송할 예정이에요.',
+        '참가 등록의 경우 festa를 통해 확인하실 수 있습니다. 추가적으로 참가 신청을 완료하신 분들에게는 리마인드 메일을 보내드릴 예정입니다.',
     },
   ],
   ON_SITE: [
@@ -26,7 +26,7 @@ export const faqData: FAQData = {
     {
       question: '당일 현장 등록할 수 있나요?',
       answer:
-        '사전에 티켓을 페스타를 통해 받기에, 당일 현장 등록은 불가능합니다.',
+        '사전에 참가자들의 굿즈를 제작해 행사 당일 전달드릴 예정입니다. 공지된 신청 기간 이후에는 등록이 불가능하며 현장 등록도 불가능합니다.',
     },
   ],
   EVENT: [
@@ -53,10 +53,23 @@ export const faqData: FAQData = {
 
 export const NoticeData: FAQType[] = [
   { question: 'question1', answer: 'answer1' },
-  { question: 'question1', answer: 'answer1' },
+  { question: 'question2', answer: 'answer2' },
 ]
 
 export const CodeOfConductData: FAQType[] = [
-  { question: 'question1', answer: 'answer1' },
-  { question: 'question1', answer: 'answer1' },
+  {
+    question: '1.참여자를 존중해주세요.',
+    answer:
+      '행사 진행 중 성적 묘사, 스토킹, 프라이버시 침해, 컨퍼런스를 방해하는 행위, 외모, 연령, 경력, 언어에 대한 차별 또는 위 행동을 옹호하는 행위는 모두 금지됩니다. 위 행동을 위반한 경우 경고 및 퇴장 처리가 이루어질 수 있습니다.',
+  },
+  {
+    question: '2.적극적인 참여를 부탁드립니다.',
+    answer:
+      '테오콘은 누구나 참여할 수 있는 컨퍼런스를 지향합니다. 원활한 진행을 위해 참여자 여러분의 적극적인 참여를 부탁드립니다. 혹시 관련해서 어려우신 점이 있다면 스태프에게 말씀 부탁드립니다.',
+  },
+  {
+    question: '3.타인의 프라이버시를 지켜주세요.',
+    answer:
+      '누군가는 사진 촬영을 원하지 않을 수 있습니다. 타인의 얼굴이 포함되는 사진은 최대한 자제 부탁드립니다.',
+  },
 ]
