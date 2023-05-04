@@ -15,7 +15,6 @@ import Footer from '@/components/Footer'
 import Banner from '@/components/Banner'
 import Head from 'next/head'
 import MetaHead from '@/components/common/MetaHead'
-import Notice from '@/components/Notice'
 import CodeOfConduct from '@/components/CodeOfConduct'
 
 export default function Home() {
@@ -31,7 +30,6 @@ export default function Home() {
       <Sponsor />
       <Map />
       <FAQ />
-      <Notice />
       <CodeOfConduct />
       <SNS />
       <Staff />
