@@ -47,7 +47,11 @@ const StaffCard = ({
                 className="w-4 tablet:w-5 desktop:w-6"
               />
             ) : (
-              <Image src={Behance} alt="behance 바로가기" className="w-4" />
+              <Image
+                src={Behance}
+                alt="behance 바로가기"
+                className="w-4 tablet:w-5 desktop:w-6"
+              />
             )}
           </div>
         </div>
