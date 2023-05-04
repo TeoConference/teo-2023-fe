@@ -3,7 +3,10 @@ import KakaoMap from '@/components/common/KakaoMap'
 
 const Map = () => {
   return (
-    <div className="w-full bg-gray-900 tablet:p-24 py-12 px-6 tablet:px-24 tablet:py-24 desktop:px-20">
+    <div
+      id="content5"
+      className="content w-full bg-gray-900 tablet:p-24 py-12 px-6 tablet:px-24 tablet:py-24 desktop:px-20"
+    >
       <div className="flex flex-col h-full tablet:gap-20 gap-10 items-center justify-around tablet:w-full">
         <div className="flex flex-col flex-wrap gap-4 tablet:gap-8 w-full items-center justify-center">
           <div className="text-mobile-h1 text-white w-full text-center">

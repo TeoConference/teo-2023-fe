@@ -6,7 +6,7 @@ import QuestionMark1 from '@/public/images/QuestionMark1.svg'
 import QuestionMark2 from '@/public/images/QuestionMark2.svg'
 
 const Program = () => (
-  <section className="bg-gray-100">
+  <section id="content1" className="content bg-gray-100">
     <div className="relative space-y-12 px-8 pt-36 m-auto">
       <div className="flex flex-col mobile:space-y-12 space-y-6 items-center">
         <div className="flex flex-col mobile:space-y-4 space-y-2 items-center">

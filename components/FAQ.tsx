@@ -20,7 +20,7 @@ const FAQ = () => {
   }
 
   return (
-    <section>
+    <section id="content6" className="content">
       <div className="flex flex-col gap-6 items-center max-w-[1024px] mx-auto px-8 py-16">
         <div className="flex flex-col">
           <p className="text-mobile-h1 tablet:text-h1 text-center">

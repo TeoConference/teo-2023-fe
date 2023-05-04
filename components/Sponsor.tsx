@@ -3,7 +3,10 @@ import React from 'react'
 import JumpitLogo from '../public/images/JumpitLogo.png'
 
 const Sponsor = () => (
-  <section className="flex flex-col items-center justify-center h-[16.195rem] tablet:h-[26.4375rem] desktop:h-[28.9375rem] bg-gray-100">
+  <section
+    id="content4"
+    className="content flex flex-col items-center justify-center h-[16.195rem] tablet:h-[26.4375rem] desktop:h-[28.9375rem] bg-gray-100"
+  >
     <div className="flex-center flex-col">
       <div className="flex-center flex-col">
         <div className="flex-center flex-col">
