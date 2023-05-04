@@ -19,9 +19,14 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        moveRight: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
       animation: {
-        moveLeft: 'moveLeft 30s linear infinite',
+        'move-left': 'moveLeft 30s linear infinite',
+        'move-right': 'moveRight 35s linear infinite',
       },
       backgroundImage: {
         'name-card': "url('/images/NameCard.svg')",

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import JumpitLogo from '../public/images/JumpitLogo.png'
+import JumpitLogo from '../public/images/JumpitLogo.svg'
 
 const Sponsor = () => (
   <section className="flex flex-col items-center justify-center h-[16.195rem] tablet:h-[26.4375rem] desktop:h-[28.9375rem] bg-gray-100">

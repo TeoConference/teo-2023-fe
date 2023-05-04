@@ -7,7 +7,7 @@ import type { FAQ as FAQType } from '@/types'
 const Notice = () => {
   return (
     <section>
-      <div className="flex flex-col gap-6 items-center max-w-[1024px] mx-auto px-8 py-16">
+      <div className="flex flex-col gap-6 items-center max-w-[1024px] mx-auto px-8 pb-16 tablet:py-16">
         <div className="flex flex-col">
           <p className="text-mobile-h1 tablet:text-h1 text-center">안내사항</p>
         </div>
