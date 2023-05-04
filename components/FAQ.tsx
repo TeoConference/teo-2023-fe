@@ -26,11 +26,11 @@ const FAQ = () => {
           <p className="text-mobile-h1 tablet:text-h1 text-center">
             자주 묻는 질문
           </p>
-          <div className="text-mobile-sub-h2 tablet:text-sub-h1 inline-flex tablet:mt-2">
+          <div className="text-mobile-sub-h2 tablet:text-sub-h1 inline-flex mt-2 tablet:mt-4">
             <button
               type="button"
               className={clsx(
-                'text-gray-900 px-2 py-1',
+                'text-gray-900 px-3 py-2',
                 selected === Category.APPLY &&
                   'text-green-main border-green-main border-b'
               )}
@@ -41,7 +41,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'text-gray-90 px-2 py-1',
+                'text-gray-90 px-3 py-2',
                 selected === Category.ON_SITE &&
                   'text-green-main border-green-main border-b'
               )}
@@ -52,7 +52,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'px-2 py-1 text-gray-900',
+                'px-3 py-2 text-gray-900',
                 selected === Category.EVENT &&
                   'text-green-main border-green-main border-b'
               )}
@@ -63,7 +63,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'px-2 py-1 text-gray-900',
+                'px-3 py-2 text-gray-900',
                 selected === Category.ETC &&
                   'text-green-main border-green-main border-b'
               )}
