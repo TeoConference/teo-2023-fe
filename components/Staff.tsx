@@ -1,46 +1,108 @@
 import React from 'react'
+import clsx from 'clsx'
+
+import { StaffData } from '@/data/Staff'
+import StaffCard from './common/StaffCard'
+import SwiperSlide from './common/SwiperSlide'
 
 const Staff = () => (
-  <section className="flex flex-col space-y-20 items-center justify-start py-36">
-    <div className="flex flex-col space-y-4 items-center justify-start">
-      <div className="inline-flex space-x-2.5 items-start justify-start">
-        <p className="text-5xl font-bold leading-10 text-center">
-          테오콘을 만들어가는
-        </p>
-        <p className="text-5xl font-bold leading-10 text-center text-green-500">
-          사람들
-        </p>
+  <section className="flex flex-col py-36">
+    <div className="flex flex-col">
+      <div className="text-center text-mobile-h1 tablet:text-h1 justify-center">
+        테오콘을 <br className="block tablet:hidden" />
+        만들어가는
+        <span className="text-center tablet:text-green-500"> 사람들</span>
       </div>
-      <p className="text-2xl font-bold leading-10 text-center text-gray-900">
+      <p className="text-h3 text-center tablet:mt-4 text-gray-900 hidden tablet:block">
         테오콘을 함께 만든 스태프를 소개합니다!
       </p>
     </div>
-    <div className="flex space-x-5 overflow-x-auto w-full desktop:justify-center">
-      {[1, 2, 3, 4].map((_, index) => (
-        <div
-          key={index}
-          className="inline-flex flex-col items-start justify-start"
+    <div className="overflow-hidden mt-12">
+      <div className="mobile:mt-12 mt-6 flex">
+        <SwiperSlide className="flex justify-between gap-3 tablet:gap-4">
+          {StaffData.map(
+            (staff, index) =>
+              index < 5 && (
+                <StaffCard
+                  key={staff.name}
+                  {...staff}
+                  className={clsx(index == 4 ? 'mr-3 tablet:mr-4' : '')}
+                />
+              )
+          )}
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-between gap-3 tablet:gap-4">
+          {StaffData.map(
+            (staff, index) =>
+              index < 5 && (
+                <StaffCard
+                  key={staff.name}
+                  {...staff}
+                  className={clsx(index == 4 ? 'mr-3 tablet:mr-4' : '')}
+                />
+              )
+          )}
+        </SwiperSlide>
+        <SwiperSlide className="flex justify-between gap-3 tablet:gap-4">
+          {StaffData.map(
+            (staff, index) =>
+              index < 5 && (
+                <StaffCard
+                  key={staff.name}
+                  {...staff}
+                  className={clsx(index == 4 ? 'mr-3 tablet:mr-4' : '')}
+                />
+              )
+          )}
+        </SwiperSlide>
+      </div>
+      <div className="tablet:mt-4 mt-3 flex">
+        <SwiperSlide
+          direction="right"
+          className="flex justify-between gap-3 tablet:gap-4"
         >
-          <img
-            alt=""
-            className="w-full h-64 rounded-tl-lg rounded-tr-lg"
-            src="https://via.placeholder.com/325x250"
-          />
-          <div className="flex flex-col space-y-1 items-start justify-center w-full h-28 px-8 bg-gray-900 rounded-bl-lg rounded-br-lg">
-            <div className="flex space-x-52 items-center justify-start">
-              <p className="text-xl font-bold leading-9 text-green-500">주니</p>
-              <img
-                alt=""
-                className="w-6 h-6 rounded-lg"
-                src="https://via.placeholder.com/24x24"
-              />
-            </div>
-            <p className="text-base leading-normal text-center text-white">
-              #성장하는 디자이너
-            </p>
-          </div>
-        </div>
-      ))}
+          {StaffData.map(
+            (staff, index) =>
+              index > 4 && (
+                <StaffCard
+                  key={staff.name}
+                  {...staff}
+                  className={clsx(index == 10 ? 'mr-3 tablet:mr-4' : '')}
+                />
+              )
+          )}
+        </SwiperSlide>
+        <SwiperSlide
+          direction="right"
+          className="flex justify-between gap-3 tablet:gap-4"
+        >
+          {StaffData.map(
+            (staff, index) =>
+              index > 4 && (
+                <StaffCard
+                  key={staff.name}
+                  {...staff}
+                  className={clsx(index == 10 ? 'mr-3 tablet:mr-4' : '')}
+                />
+              )
+          )}
+        </SwiperSlide>
+        <SwiperSlide
+          direction="right"
+          className="flex justify-between gap-3 tablet:gap-4"
+        >
+          {StaffData.map(
+            (staff, index) =>
+              index > 4 && (
+                <StaffCard
+                  key={staff.name}
+                  {...staff}
+                  className={clsx(index == 10 ? 'mr-3 tablet:mr-4' : '')}
+                />
+              )
+          )}
+        </SwiperSlide>
+      </div>
     </div>
   </section>
 )
