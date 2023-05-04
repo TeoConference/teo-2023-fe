@@ -19,7 +19,7 @@ const FAQField = ({ question, answer }: FAQFieldProps) => {
     <div className="flex flex-col w-full">
       <div
         className={clsx(
-          'flex justify-between cursor-pointer w-full items-center px-4 py-2 tablet:py-4 bg-gray-50',
+          'flex justify-between cursor-pointer w-full items-center px-4 py-3.5 tablet:py-5 tablet:px-7 bg-gray-50',
           isOpen ? 'rounded-t-lg' : 'rounded-lg'
         )}
         onClick={onClickFAQ}
@@ -32,7 +32,7 @@ const FAQField = ({ question, answer }: FAQFieldProps) => {
       </div>
       <div
         className={clsx(
-          'px-4 py-2 bg-gray-50 rounded-b-lg',
+          'pl-4 pr-11 py-2 tablet:pl-8 tablet:pr-20 bg-gray-50 rounded-b-lg',
           isOpen ? 'block' : 'hidden'
         )}
       >
