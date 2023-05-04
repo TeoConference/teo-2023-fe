@@ -1,32 +1,25 @@
 import React from 'react'
+import Image from 'next/image'
+
+import LinkedIn from '@/public/images/LinkedIn.svg'
+import Twitter from '@/public/images/Twitter.svg'
+import Instagram from '@/public/images/Instagram.svg'
 
 const SNS = () => (
-  <div className="w-[100%] inline-flex flex-col items-center justify-center px-2.5 py-28 bg-gray-900">
-    <div className="flex flex-col space-y-16 items-center justify-start max-w-[658px] mx-auto">
-      <p className="text-5xl font-bold leading-10 text-center text-white">
-        테오콘 소식을 더 빨리 알고 싶다면
+  <div className="w-[100%] inline-flex flex-col items-center justify-center px-2.5 py-14 tablet:py-20 bg-gray-900">
+    <div className="flex flex-col items-center max-w-[700px] mx-auto">
+      <p className="text-h3 tablet:text-h2 desktop:text-h1 text-center text-white">
+        테오콘 소식을 <br className="block tablet:hidden" /> 더 빨리 알고 싶다면
       </p>
-      <div className="inline-flex space-x-5 items-start justify-start">
-        <div className="flex items-start justify-start p-4 bg-white rounded-lg">
-          <img
-            alt=""
-            className="flex-1 h-full rounded-lg"
-            src="https://via.placeholder.com/34x34"
-          />
+      <div className="flex mt-6 tablet:mt-14 gap-4">
+        <div className="flex p-3 tablet:p-4 bg-white rounded-lg">
+          <Image src={LinkedIn} alt="linkedin 링크" className="h-full" />
         </div>
-        <div className="flex items-start justify-start p-4 bg-white rounded-lg">
-          <img
-            alt=""
-            className="flex-1 h-full rounded-lg"
-            src="https://via.placeholder.com/34x34"
-          />
+        <div className="flex p-3 tablet:p-4 bg-white rounded-lg">
+          <Image src={Twitter} alt="twitter 링크" className="h-full" />
         </div>
-        <div className="flex items-start justify-start p-4 bg-white rounded-lg">
-          <img
-            alt=""
-            className="flex-1 h-full rounded-lg"
-            src="https://via.placeholder.com/34x34"
-          />
+        <div className="flex p-3 tablet:p-4 bg-white rounded-lg">
+          <Image src={Instagram} alt="instagram 링크" className="h-full" />
         </div>
       </div>
     </div>
