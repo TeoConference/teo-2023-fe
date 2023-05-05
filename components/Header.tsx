@@ -84,12 +84,12 @@ export const Header = () => {
         {isOpen ? (
           <CloseIcon
             onClick={toggleSide}
-            className="desktop:hidden tablet:block"
+            className="desktop:hidden tablet:block cursor-pointer"
           />
         ) : (
           <MenuIcon
             onClick={toggleSide}
-            className="desktop:hidden tablet:block"
+            className="desktop:hidden tablet:block cursor-pointer"
           />
         )}
         <Sidebar currentId={currentId} isOpen={isOpen} setIsOpen={setIsOpen} />
