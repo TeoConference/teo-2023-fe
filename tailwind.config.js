@@ -54,9 +54,8 @@ module.exports = {
     },
     screens: {
       'desktop-xl': '1920px',
-      desktop: '1024px',
-      tablet: '768px',
-      mobile: '640px',
+      desktop: '1200px',
+      tablet: '1024px',
     },
   },
   plugins: [],
