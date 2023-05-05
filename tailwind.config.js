@@ -32,7 +32,7 @@ module.exports = {
         'move-right': 'moveRight 35s linear infinite',
       },
       backgroundImage: {
-        'name-card': "url('/images/NameCard.svg')",
+        'name-card': "url('/images/NameCard.png')",
       },
     },
     fontSize: {

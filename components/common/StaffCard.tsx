@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import clsx from 'clsx'
 
 import GithubLogo from '@/public/images/GithubLogo.svg'
@@ -8,7 +8,7 @@ import Behance from '@/public/images/Behance.svg'
 interface StaffCardProps {
   name: string
   description: string
-  image: string
+  image: StaticImageData
   url: string
   position: 'developer' | 'designer'
   className?: string
