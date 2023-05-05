@@ -1,13 +1,4 @@
-import { Dispatch, SetStateAction } from 'react'
-
-// const observerOption = {
-//   threshold: [0, 0.5, 1],
-//   rootMargin: '-30% -40%',
-// }
-
-// export const getIntersectionObserver = (
-//   setState: Dispatch<SetStateAction<string>>
-// ) => {
+import { useEffect, useRef } from 'react'
 let direction = ''
 let prevYposition = 0
 
@@ -19,24 +10,6 @@ const checkScrollDirection = (prevY: number) => {
 
   prevYposition = window.scrollY
 }
-
-//   // observer
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       checkScrollDirection(prevYposition)
-
-//       if (
-//         (direction === 'down' && !entry.isIntersecting) ||
-//         (direction === 'up' && entry.isIntersecting)
-//       ) {
-//         setState(entry.target.id)
-//       }
-//     })
-//   }, observerOption)
-
-//   return observer
-// }
-import { useEffect, useRef } from 'react'
 
 const useIntersectionObservation = (setActiveId: any, currentId: any) => {
   const contentRef = useRef<any>({})
