@@ -14,7 +14,6 @@ export const Header = () => {
   const [currentId, setCurrentId] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   useIntersectionObservation(setCurrentId, currentId)
-  console.log(currentId)
 
   const toggleSide = () => {
     setIsOpen((prev) => !prev)
