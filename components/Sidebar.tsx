@@ -68,8 +68,8 @@ const Sidebar = (props: SidebarProps) => {
                   ) : (
                     <Square className="fill-[#E8E8E8]" />
                   )}
+                  &nbsp;{item.name}
                 </a>
-                &nbsp;{item.name}
               </div>
             )
           } else {
@@ -78,21 +78,21 @@ const Sidebar = (props: SidebarProps) => {
                 key={idx}
                 className="w-[90%] tablet:w-[85%] py-4 tablet:py-5 border-b-[0.5px] flex justify-between"
               >
-                <div className="flex-center">
-                  <a href={item.link} className="flex items-center">
-                    {currentId === item.id ? (
-                      <Square className="fill-[#00DE4F]" />
-                    ) : (
-                      <Square className="fill-[#E8E8E8]" />
-                    )}
-                  </a>
+                <a href={item.link} className="flex items-center">
+                  {currentId === item.id ? (
+                    <Square className="fill-[#00DE4F]" />
+                  ) : (
+                    <Square className="fill-[#E8E8E8]" />
+                  )}
                   &nbsp;{item.name}
-                </div>
+                </a>
                 <div
                   className="flex-center"
                   onClick={() => setIsArrowOpen((prev) => !prev)}
                 >
-                  {isArrowOpen ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                  <button type="button">
+                    {isArrowOpen ? <KeyboardArrowUp /> : <KeyboardArrowDown />}
+                  </button>
                 </div>
               </div>
             )
