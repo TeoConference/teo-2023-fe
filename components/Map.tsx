@@ -1,4 +1,5 @@
 import React from 'react'
+
 import KakaoMap from '@/components/common/KakaoMap'
 
 const Map = () => {

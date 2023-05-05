@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import LocationOnIcon from '@mui/icons-material/LocationOn'
 
 interface KakaoMapProps {
   latitude: number
@@ -34,10 +35,20 @@ const KakaoMap = ({ latitude, longitude }: KakaoMapProps) => {
   }, [latitude, longitude])
 
   return (
-    <div
-      id="map"
-      className="w-full h-60 tablet:h-[338px] desktop:h-[450px] rounded-lg"
-    />
+    <div className="relative">
+      <div
+        id="map"
+        className="w-full h-60 tablet:h-[338px] desktop:h-[450px] rounded-lg"
+      />
+      <a
+        href="https://place.map.kakao.com/2104508385"
+        target="_blank"
+        className="flex items-center gap-1 text-white bg-gray-800 rounded-lg absolute text-mobile-sub-h2 bottom-4 right-4 z-10 p-2"
+      >
+        <LocationOnIcon />
+        신촌역 사람인 카페 2층
+      </a>
+    </div>
   )
 }
 

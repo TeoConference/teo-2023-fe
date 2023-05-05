@@ -114,9 +114,13 @@ const Sidebar = (props: SidebarProps) => {
           })}
         </div>
         <div className="w-[90%] py-4 tablet:py-5">
-          <a href="https://festa.io/events/3428" target="_blank">
+          <a
+            href="https://festa.io/events/3428"
+            target="_blank"
+            className="inline-flex items-center gap-4"
+          >
             <LaunchIcon className="text-green-main" />{' '}
-            <span className="ml-2 text-green-main">참가신청</span>
+            <span className="text-green-main">참가신청</span>
           </a>
         </div>
       </div>
