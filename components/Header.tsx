@@ -1,9 +1,11 @@
-import useIntersectionObservation from '@/lib/observer'
-import CloseIcon from '@mui/icons-material/Close'
-import MenuIcon from '@mui/icons-material/Menu'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+import CloseIcon from '@mui/icons-material/Close'
+import MenuIcon from '@mui/icons-material/Menu'
+import LaunchIcon from '@mui/icons-material/Launch'
+
+import useIntersectionObservation from '@/lib/observer'
 import Logo from '../public/images/Logo.png'
 import Sidebar from './Sidebar'
 
@@ -79,6 +81,9 @@ export const Header = () => {
             }`}
           >
             FAQ
+          </a>
+          <a href="https://festa.io/events/3428" target="_blank">
+            <LaunchIcon className="text-green-main" />
           </a>
         </div>
         {isOpen ? (

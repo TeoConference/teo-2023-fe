@@ -1,5 +1,6 @@
-import { KeyboardArrowDown, KeyboardArrowUp, Square } from '@mui/icons-material'
 import { useEffect, useRef, useState } from 'react'
+import { KeyboardArrowDown, KeyboardArrowUp, Square } from '@mui/icons-material'
+import LaunchIcon from '@mui/icons-material/Launch'
 
 interface SidebarProps {
   currentId: string
@@ -34,7 +35,6 @@ const Sidebar = (props: SidebarProps) => {
     }
     if (mount) {
       console.log('here')
-      // document.body.style.cssText = `overflow: hidden`
       document.querySelectorAll("a[href^='#']").forEach((anchor) => {
         anchor.addEventListener('click', handleClick)
       })
@@ -62,13 +62,13 @@ const Sidebar = (props: SidebarProps) => {
                 key={idx}
                 className="w-[90%] tablet:w-[85%] py-4 tablet:py-5 border-b-[0.5px] flex"
               >
-                <a href={item.link} className="flex items-center">
+                <a href={item.link} className="flex items-center gap-4">
                   {currentId === item.id ? (
                     <Square className="fill-[#00DE4F]" />
                   ) : (
                     <Square className="fill-[#E8E8E8]" />
                   )}
-                  &nbsp;{item.name}
+                  <span>{item.name}</span>
                 </a>
               </div>
             )
@@ -78,13 +78,13 @@ const Sidebar = (props: SidebarProps) => {
                 key={idx}
                 className="w-[90%] tablet:w-[85%] py-4 tablet:py-5 border-b-[0.5px] flex justify-between"
               >
-                <a href={item.link} className="flex items-center">
+                <a href={item.link} className="flex items-center gap-4">
                   {currentId === item.id ? (
                     <Square className="fill-[#00DE4F]" />
                   ) : (
                     <Square className="fill-[#E8E8E8]" />
                   )}
-                  &nbsp;{item.name}
+                  <span>{item.name}</span>
                 </a>
                 <div
                   className="flex-center"
@@ -112,6 +112,12 @@ const Sidebar = (props: SidebarProps) => {
               </div>
             )
           })}
+        </div>
+        <div className="w-[90%] py-4 tablet:py-5">
+          <a href="https://festa.io/events/3428" target="_blank">
+            <LaunchIcon className="text-green-main" />{' '}
+            <span className="ml-2">참가신청</span>
+          </a>
         </div>
       </div>
     </div>
