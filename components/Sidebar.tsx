@@ -34,13 +34,11 @@ const Sidebar = (props: SidebarProps) => {
       setIsOpen(false)
     }
     if (mount) {
-      console.log('here')
       document.querySelectorAll("a[href^='#']").forEach((anchor) => {
         anchor.addEventListener('click', handleClick)
       })
     }
     return () => {
-      console.log('unmount')
       // document.body.style.cssText = 'overflow: unset;'
       document.querySelectorAll("a[href^='#']").forEach((anchor) => {
         anchor.removeEventListener('click', handleClick)
