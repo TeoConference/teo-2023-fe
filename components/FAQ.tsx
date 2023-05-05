@@ -25,7 +25,7 @@ const FAQ = () => {
       className="content flex flex-col gap-6 items-center mx-auto px-4 box-border py-16 w-full"
     >
       <div className="flex flex-col">
-        <p className="text-mobile-h1 tablet:text-h1 text-center">
+        <p id="sub1" className="text-mobile-h1 tablet:text-h1 text-center">
           자주 묻는 질문
         </p>
         <div className="text-mobile-sub-h2 tablet:text-sub-h1 inline-flex mt-2 tablet:mt-4">

@@ -1,24 +1,19 @@
-import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
-import Logo from '../public/images/Logo.png'
-import MenuIcon from '@mui/icons-material/Menu'
 import useIntersectionObservation from '@/lib/observer'
-
-let direction = ''
-let prevYposition = 0
-
-// scroll 방향 check function
-const checkScrollDirection = (prevY: number) => {
-  if (window.scrollY === 0 && prevY === 0) return
-  else if (window.scrollY > prevY) direction = 'down'
-  else direction = 'up'
-
-  prevYposition = window.scrollY
-}
+import CloseIcon from '@mui/icons-material/Close'
+import MenuIcon from '@mui/icons-material/Menu'
+import Image from 'next/image'
+import React, { useState } from 'react'
+import Logo from '../public/images/Logo.png'
+import Sidebar from './Sidebar'
 
 export const Header = () => {
   const [currentId, setCurrentId] = useState('')
+  const [isOpen, setIsOpen] = useState(false)
   useIntersectionObservation(setCurrentId, currentId)
+
+  const toggleSide = () => {
+    setIsOpen((prev) => !prev)
+  }
 
   return (
     <header className="w-full mobile:h-16 h-12 backdrop-blur-sm bg-white bg-opacity-90 flex-center sticky top-0 text-[16px] z-[51] p-4">
@@ -76,8 +71,18 @@ export const Header = () => {
             FAQ
           </a>
         </div>
-        <MenuIcon className="desktop:hidden tablet:block" />
-        <div className="desktop:hidden"></div>
+        {isOpen ? (
+          <CloseIcon
+            onClick={toggleSide}
+            className="desktop:hidden tablet:block"
+          />
+        ) : (
+          <MenuIcon
+            onClick={toggleSide}
+            className="desktop:hidden tablet:block"
+          />
+        )}
+        <Sidebar currentId={currentId} isOpen={isOpen} setIsOpen={setIsOpen} />
       </nav>
     </header>
   )

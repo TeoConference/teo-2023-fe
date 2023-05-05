@@ -8,7 +8,9 @@ const CodeOfConduct = () => {
   return (
     <section className="flex flex-col gap-6 items-center mx-auto px-4 box-border py-16 w-full">
       <div className="flex flex-col">
-        <p className="text-mobile-h1 tablet:text-h1 text-center">행동강령</p>
+        <p id="sub2" className="text-mobile-h1 tablet:text-h1 text-center">
+          행동강령
+        </p>
       </div>
       <div className="flex flex-col gap-2 tablet:gap-4 w-full desktop:w-[768px] desktop-xl:w-[1024px]">
         {CodeOfConductData.map((faq: FAQType) => (
