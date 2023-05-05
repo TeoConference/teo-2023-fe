@@ -9,7 +9,9 @@ const PrivacyModal = (props: PrivacyModalProps) => {
   return (
     <ModalBackDrop onClick={powerModal}>
       <CreateModalContainer>
-        <div className="text-mobile-h2 tablet:text-h3 mb-7">개인정보 처리</div>
+        <div className="text-mobile-h2 tablet:text-h3 mb-7">
+          개인정보 처리방침
+        </div>
         <div className="text-body3 tablet:text-body2 h-[60vh] bg-[#F8F8F8] w-full overflow-y-scroll p-[15px] break-keep">
           테오콘(이하 &quot;회사&quot;라 함)는 개인정보보호법을 준수하며, 관련
           법령에 의거한 개인정보처리방침을 정하여 이용자 권익 보호에 최선을
