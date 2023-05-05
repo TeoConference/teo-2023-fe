@@ -1,20 +1,21 @@
-import Teo from '@/public/images/staff/Teo.svg'
-import Domo from '@/public/images/staff/Domo.svg'
-import Halang from '@/public/images/staff/Halang.svg'
-import Hubble from '@/public/images/staff/Hubble.svg'
-import J from '@/public/images/staff/J.svg'
-import Moseung from '@/public/images/staff/Moseung.svg'
-import Raul from '@/public/images/staff/Raul.svg'
-import Sudal from '@/public/images/staff/Sudal.svg'
-import Three from '@/public/images/staff/Three.svg'
-import Juni from '@/public/images/staff/Juni.svg'
-import Mini from '@/public/images/staff/Mini.svg'
+import Teo from '@/public/images/staff/Teo.png'
+import Domo from '@/public/images/staff/Domo.png'
+import Halang from '@/public/images/staff/Halang.png'
+import Hubble from '@/public/images/staff/Hubble.png'
+import J from '@/public/images/staff/J.png'
+import Moseung from '@/public/images/staff/Moseung.png'
+import Raul from '@/public/images/staff/Raul.png'
+import Sudal from '@/public/images/staff/Sudal.png'
+import Three from '@/public/images/staff/Three.png'
+import Juni from '@/public/images/staff/Juni.png'
+import Mini from '@/public/images/staff/Mini.png'
+import { StaticImageData } from 'next/image'
 
 type StaffDataType = {
   id: number
   name: string
   description: string
-  image: string
+  image: StaticImageData
   url: string
   position: 'developer' | 'designer'
 }
