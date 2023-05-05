@@ -39,7 +39,7 @@ const Program = () => (
                 src={i < 2 ? QuestionMark1 : QuestionMark2}
                 alt="question-mark"
                 className={clsx(
-                  'w-[60px] h-[60px] tablet:min-w-[70px] tablet:min-h-[70px] tablet:w-full tablet:gh-full desktop:min-w-[130px] desktop:min-h-[130px] desktop:h-full desktop:w-full'
+                  'w-[60px] h-[60px] tablet:w-[70px] tablet:h-[70px] desktop:w-[130px] desktop:h-[130px]'
                 )}
               />
             </div>

@@ -8,25 +8,14 @@ const NameCard = () => (
     <div className="flex flex-col space-y-8 items-center w-full">
       <div className="flex flex-col space-y-10 items-center">
         <div className="flex flex-col space-y-4 items-center">
-          <p className="text-mobile-h1 tablet:text-h1 text-center">
-            나만의 명함 만들기
-          </p>
+          <p className="text-mobile-h1 tablet:text-h1 text-center">명함 굿즈</p>
           <p className="text-mobile-h2 tablet:text-h3 text-center">
-            나를 소개하는 멋진 명함을 만들어보세요!
+            참가자 전원에게 명함 굿즈를 제공합니다.
           </p>
         </div>
       </div>
       <div className="bg-name-card max-w-[1300px] bg-cover rounded-lg h-[250px] tablet:h-[280px] desktop:h-[367px] w-full" />
     </div>
-    <a
-      href="https://festa.io/events/3428"
-      target="_blank"
-      className="inline-flex items-center justify-center px-8 py-4 bg-gray-900 rounded-full"
-    >
-      <p className="text-mobile-body2 text-center text-white">
-        자세히 알아보기
-      </p>
-    </a>
   </section>
 )
 

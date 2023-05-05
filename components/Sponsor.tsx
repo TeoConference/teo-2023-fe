@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import JumpitLogo from '../public/images/JumpitLogo.png'
+import JumpitLogo from '../public/images/JumpitLogo.svg'
 
 const Sponsor = () => (
   <section
@@ -14,11 +14,11 @@ const Sponsor = () => (
             후원사 소개
           </p>
           <p className="font-Pretendard font-medium text-[1.125rem] leading-10 text-center tablet:hidden">
-            테오의 컨퍼런스 1기는 <br /> 사림인의 &apos;점핏&apos;에서
+            테오의 컨퍼런스 1기는 <br /> 사람인의 &apos;점핏&apos;에서
             후원합니다.
           </p>
           <p className="hidden tablet:block font-Pretendard font-bold text-[1.625rem] mt-8">
-            테오의 컨퍼런스 1기는 사림인의 &apos;점핏&apos;에서 후원합니다.
+            테오의 컨퍼런스 1기는 사람인의 &apos;점핏&apos;에서 후원합니다.
           </p>
         </div>
       </div>

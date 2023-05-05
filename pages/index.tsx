@@ -1,5 +1,4 @@
 import React from 'react'
-import { Inter } from 'next/font/google'
 
 import Header from '@/components/Header'
 import FAQ from '@/components/FAQ'
@@ -13,9 +12,7 @@ import SNS from '@/components/SNS'
 import Staff from '@/components/Staff'
 import Footer from '@/components/Footer'
 import Banner from '@/components/Banner'
-import Head from 'next/head'
 import MetaHead from '@/components/common/MetaHead'
-import Notice from '@/components/Notice'
 import CodeOfConduct from '@/components/CodeOfConduct'
 
 export default function Home() {
@@ -31,7 +28,6 @@ export default function Home() {
       <Sponsor />
       <Map />
       <FAQ />
-      <Notice />
       <CodeOfConduct />
       <SNS />
       <Staff />
