@@ -9,7 +9,7 @@ import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDou
 
 const Banner = () => {
   return (
-    <section className="bg-black text-white desktop:h-[calc(100vh_-_3rem)] h-[640px] tablet:h-[894px] flex-center relative tablet:px-10">
+    <section className="bg-black text-white h-[calc(100vh_-_3rem)] flex-center relative tablet:px-10">
       <div className="w-full h-full flex-center flex-col tablet:justify-between desktop:justify-around desktop:max-w-[1360px] desktop:mt-50">
         <div className="w-full tablet:pt-16 tablet:pl-16 desktop:hidden">
           <Image
