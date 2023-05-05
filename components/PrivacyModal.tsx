@@ -1,4 +1,4 @@
-import { useEffect, Dispatch, SetStateAction } from 'react'
+import { useEffect } from 'react'
 
 interface PrivacyModalProps {
   powerModal: () => void
