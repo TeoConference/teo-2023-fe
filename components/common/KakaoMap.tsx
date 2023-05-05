@@ -35,7 +35,7 @@ const KakaoMap = ({ latitude, longitude }: KakaoMapProps) => {
   }, [latitude, longitude])
 
   return (
-    <div className="relative">
+    <div className="relative rounded-lg">
       <div
         id="map"
         className="w-full h-60 tablet:h-[338px] desktop:h-[450px] rounded-lg"
