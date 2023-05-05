@@ -7,7 +7,10 @@ import Networking3 from '@/public/images/Networking3.svg'
 
 // w-[280px] tablet:w-[328px] desktop-xl:w-[440px]
 const Networking = () => (
-  <div className="space-y-6 tablet:space-y-20 py-16 tablet:py-28 w-full">
+  <div
+    id="content2"
+    className="content space-y-6 tablet:space-y-20 py-16 tablet:py-28 w-full"
+  >
     <div className="flex flex-col space-y-12 items-center">
       <div className="flex flex-col space-y-4 items-center">
         <p className="text-mobile-h1 tablet:text-h1">네트워킹</p>

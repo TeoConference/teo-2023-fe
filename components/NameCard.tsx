@@ -1,7 +1,10 @@
 import React from 'react'
 
 const NameCard = () => (
-  <section className="py-12 tablet:py-28 desktop:py-36 px-4">
+  <section
+    id="content3"
+    className="content py-12 tablet:py-28 desktop:py-36 px-4"
+  >
     <div className="flex-col w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px] m-auto">
       <div className="flex flex-col space-y-8 items-center w-full">
         <div className="flex flex-col space-y-10 items-center">

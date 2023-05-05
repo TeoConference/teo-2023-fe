@@ -55,6 +55,7 @@ const Footer = () => (
       <Image
         src={UpArrow}
         alt="맨 위로 가기"
+        onClick={() => window.scrollTo(0, 0)}
         className="absolute bottom-12 right-6 tablet:-top-4 tablet:right-24"
       />
     </button>

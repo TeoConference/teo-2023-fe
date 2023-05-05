@@ -73,6 +73,9 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+  .toggleOn {
+    @apply desktop:hidden font-Pretendard font-normal text-[1.625rem] tablet:text-[2rem] top-12 left-0 z-[80] w-[100vw] h-[calc(100vh-3rem)] absolute bg-white;
+  }
 }
 
 /* :root {

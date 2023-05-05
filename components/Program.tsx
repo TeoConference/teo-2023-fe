@@ -6,7 +6,10 @@ import QuestionMark1 from '@/public/images/QuestionMark1.svg'
 import QuestionMark2 from '@/public/images/QuestionMark2.svg'
 
 const Program = () => (
-  <section className="relative p-12 tablet:p-28 desktop:pb-0 desktop:pt-36 px-4 bg-gray-100">
+  <section
+    id="content1"
+    className="content relative p-12 tablet:p-28 desktop:pb-0 desktop:pt-36 px-4 bg-gray-100"
+  >
     <div className="flex-col gap-12 w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px]  m-auto">
       <div className="flex flex-col tablet:space-y-12 space-y-6 items-center w-full">
         <div className="flex flex-col tablet:space-y-4 space-y-2 items-center">

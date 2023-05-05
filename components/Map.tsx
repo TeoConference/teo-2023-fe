@@ -3,7 +3,10 @@ import KakaoMap from '@/components/common/KakaoMap'
 
 const Map = () => {
   return (
-    <section className="bg-gray-900 py-12 tablet:py-28 desktop:py-36 px-4">
+    <section
+      id="content5"
+      className="content bg-gray-900 py-12 tablet:py-28 desktop:py-36 px-4"
+    >
       <div className="flex-col w-full flex-center tablet:w-[768px] desktop:w-[1024px] m-auto">
         <div className="h-full tablet:space-y-20 space-y-10 w-full">
           <div className="space-y-4 tablet:space-y-8">
