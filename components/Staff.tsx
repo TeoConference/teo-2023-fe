@@ -18,7 +18,7 @@ const Staff = () => (
       </p>
     </div>
     <div className="overflow-hidden mt-12">
-      <div className="mobile:mt-12 mt-6 flex">
+      <div className="tablet:mt-12 mt-6 flex">
         <SwiperSlide className="flex justify-between gap-3 tablet:gap-4">
           {StaffData.map(
             (staff, index) =>
