@@ -116,7 +116,7 @@ const Sidebar = (props: SidebarProps) => {
         <div className="w-[90%] py-4 tablet:py-5">
           <a href="https://festa.io/events/3428" target="_blank">
             <LaunchIcon className="text-green-main" />{' '}
-            <span className="ml-2">참가신청</span>
+            <span className="ml-2 text-green-main">참가신청</span>
           </a>
         </div>
       </div>
