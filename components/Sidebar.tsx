@@ -60,7 +60,7 @@ const Sidebar = (props: SidebarProps) => {
             return (
               <div
                 key={idx}
-                className="w-[90%] tablet:w-[85%] py-2 border-b-[0.5px] flex"
+                className="w-[90%] tablet:w-[85%] py-4 tablet:py-5 border-b-[0.5px] flex"
               >
                 <a href={item.link} className="flex items-center">
                   {currentId === item.id ? (
@@ -76,7 +76,7 @@ const Sidebar = (props: SidebarProps) => {
             return (
               <div
                 key={idx}
-                className="w-[90%] tablet:w-[85%] py-2 border-b-[0.5px] flex justify-between"
+                className="w-[90%] tablet:w-[85%] py-4 tablet:py-5 border-b-[0.5px] flex justify-between"
               >
                 <div className="flex-center">
                   <a href={item.link} className="flex items-center">
@@ -101,11 +101,11 @@ const Sidebar = (props: SidebarProps) => {
         <div
           className={`${
             isArrowOpen ? 'block' : 'hidden'
-          } text-[1.25rem] tablet:text-[1.625rem] space-y-3 w-[90%] tablet:w-[85%]`}
+          } text-[1.25rem] tablet:text-[1.625rem] space-y-4 w-[90%] tablet:w-[85%]`}
         >
           {SIDEBAR_ITEMS.SUB_CONTENTS.map((item, idx) => {
             return (
-              <div key={idx} className={`${idx === 0 ? 'pt-5' : ''}`}>
+              <div key={idx} className={`${idx === 0 ? 'pt-6' : ''}`}>
                 <Square className="invisible" />
                 &nbsp;
                 <a href={item.link}>{item.name}</a>

@@ -6,7 +6,7 @@ import StaffCard from './common/StaffCard'
 import SwiperSlide from './common/SwiperSlide'
 
 const Staff = () => (
-  <section className="flex flex-col py-36">
+  <section className="flex flex-col py-16 tablet:py-36">
     <div className="flex flex-col">
       <div className="text-center text-mobile-h1 tablet:text-h1 justify-center">
         테오콘을 <br className="block tablet:hidden" />
@@ -18,7 +18,7 @@ const Staff = () => (
       </p>
     </div>
     <div className="overflow-hidden mt-12">
-      <div className="mobile:mt-12 mt-6 flex">
+      <div className="tablet:mt-12 mt-6 flex">
         <SwiperSlide className="flex justify-between gap-3 tablet:gap-4">
           {StaffData.map(
             (staff, index) =>

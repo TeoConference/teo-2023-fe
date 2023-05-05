@@ -11,7 +11,7 @@ interface TalkProps {
 const Talk = ({ contents, speaker, Icon, classNames }: TalkProps) => {
   return (
     <li className={clsx('flex flex-col gap-10 whitespace-pre', classNames)}>
-      <div className="flex flex-col relative space-y-5 items-start justify-start mobile:px-8 mobile:py-10 p-6 bg-white rounded-3xl">
+      <div className="flex flex-col relative space-y-5 items-start justify-start tablet:px-8 tablet:py-10 p-6 bg-white rounded-3xl">
         <p className="tablet:text-h3 text-mobile-h2 font-bold text-gray-900">
           {contents}
         </p>

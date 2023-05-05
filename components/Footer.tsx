@@ -7,8 +7,8 @@ import Twitter from '@/public/images/Twitter.svg'
 import UpArrow from '@/public/images/UpArrow.svg'
 
 const Footer = () => (
-  <footer className="relative bg-gray-100 px-6 py-10 tablet:px-24 tablet:py-20">
-    <div className="max-w-[1360px] mx-auto">
+  <footer className="relative bg-gray-100 px-4 py-10 tablet:py-20">
+    <div className="tablet:max-w-[768px] desktop:max-w-[1024px] desktop-xl:max-w-[1360px] m-auto">
       <Image alt="logo" src={Logo} width={150} height={25.96} />
       <p className="text-sub-h2 text-gray-400 mt-4 pb-8 border-b">
         ⓒ TEOCON. All Right Reserved.
@@ -55,6 +55,7 @@ const Footer = () => (
       <Image
         src={UpArrow}
         alt="맨 위로 가기"
+        onClick={() => window.scrollTo(0, 0)}
         className="absolute bottom-12 right-6 tablet:-top-4 tablet:right-24"
       />
     </button>

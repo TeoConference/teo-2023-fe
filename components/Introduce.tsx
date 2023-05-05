@@ -76,67 +76,69 @@ const Icon = (index: number) => {
 
 const Introduce = () => {
   return (
-    <section className="flex-col w-full flex-center mobile:py-[11.25rem] py-[4.125rem] tablet:px-32 px-4">
-      <div className="flex flex-col mobile:space-y-12 items-center justify-start mobile:max-w-[34rem] max-w-[19.25rem]">
-        <div className="flex flex-col mobile:space-y-6 space-y-2 items-center justify-start">
-          <p className="tablet:text-h1 text-mobile-h1 leading-10 text-center">
-            모두에게 <br className="block tablet:hidden" />
-            열려있는 컨퍼런스
-          </p>
-          <p className="tablet:text-h3 text-mobile-h2 text-center text-gray-900">
-            테오의 스프린트가 컨퍼런스로 돌아왔어요!
+    <section className="py-12 tablet:py-28 desktop:py-36 px-4">
+      <div className="flex-col w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px]  m-auto">
+        <div className="flex flex-col items-center max-w-[560px]">
+          <div className="flex flex-col space-y-2 items-center">
+            <p className="tablet:text-h1 text-mobile-h1 leading-10 text-center">
+              모두에게 <br className="block tablet:hidden" />
+              열려있는 컨퍼런스
+            </p>
+            <p className="tablet:text-h3 text-mobile-h2 text-center text-gray-900">
+              테오의 스프린트가 컨퍼런스로 돌아왔어요!
+            </p>
+          </div>
+          <p className="tablet:text-body1 text-mobile-body2 text-center mt-6 text-gray-900">
+            테오의 컨퍼런스는{' '}
+            <strong className="text-green-main rounded-lg">
+              &quot;모두에게 열려있는 컨퍼런스&quot;
+            </strong>{' '}
+            라는 컨셉을 목표로 <br className="hidden tablet:block" />
+            서로가 갖고 있는 다양한 경험과 지식을 공유하고{' '}
+            <br className="hidden tablet:block" />
+            개발자들간에 소통하는 시간을 만들기 위해 기획되었어요!
           </p>
         </div>
-        <p className="tablet:text-body1 text-mobile-body2 text-center mt-6 text-gray-900">
-          테오의 컨퍼런스는{' '}
-          <strong className="text-green-main rounded-lg">
-            &quot;모두에게 열려있는 컨퍼런스&quot;
-          </strong>{' '}
-          라는 컨셉을 목표로{' '}
-          <strong>서로가 갖고 있는 다양한 경험과 지식을 공유</strong>하고
-          <strong> 개발자들간에 소통하는 시간</strong>을 만들기 위해
-          기획되었어요!
-        </p>
-      </div>
-      <div className="bg-black rounded-3xl mobile:mt-[4.75rem] mt-[2.25rem] max-w-[85rem] w-full mobile:h-[36.875rem] h-[23.75rem]">
-        <div className="overflow-hidden">
-          <p className="m-auto w-full text-white mobile:text-h2 mobile:block hidden mobile:mt-10 leading-10 text-center">
-            언제나 궁금했던 이야기들
-          </p>
-          <div className="mobile:mt-12 mt-6 flex">
-            <SwiperSlide className="flex justify-between gap-10">
-              {talkData.map((talk, i) => (
-                <Talk
-                  key={i}
-                  contents={talk.contents}
-                  speaker={talk.speaker}
-                  Icon={Icon(i)}
-                  classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
-                />
-              ))}
-            </SwiperSlide>
-            <SwiperSlide className="flex justify-between gap-10">
-              {talkData.map((talk, i) => (
-                <Talk
-                  key={i}
-                  contents={talk.contents}
-                  speaker={talk.speaker}
-                  Icon={Icon(i)}
-                  classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
-                />
-              ))}
-            </SwiperSlide>
-            <SwiperSlide className="flex justify-between gap-10">
-              {talkData.map((talk, i) => (
-                <Talk
-                  key={i}
-                  contents={talk.contents}
-                  speaker={talk.speaker}
-                  Icon={Icon(i)}
-                  classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
-                />
-              ))}
-            </SwiperSlide>
+        <div className="bg-black rounded-3xl mt-[2.25rem] max-w-[85rem] w-full tablet:h-[36.875rem] h-[23.75rem]">
+          <div className="overflow-hidden">
+            <p className="text-h2 m-auto w-full text-white tablet:mt-10 tablet:block hidden text-center">
+              언제나 궁금했던 이야기들
+            </p>
+            <div className="tablet:mt-12 mt-6 flex">
+              <SwiperSlide className="flex justify-between gap-10">
+                {talkData.map((talk, i) => (
+                  <Talk
+                    key={i}
+                    contents={talk.contents}
+                    speaker={talk.speaker}
+                    Icon={Icon(i)}
+                    classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
+                  />
+                ))}
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-between gap-10">
+                {talkData.map((talk, i) => (
+                  <Talk
+                    key={i}
+                    contents={talk.contents}
+                    speaker={talk.speaker}
+                    Icon={Icon(i)}
+                    classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
+                  />
+                ))}
+              </SwiperSlide>
+              <SwiperSlide className="flex justify-between gap-10">
+                {talkData.map((talk, i) => (
+                  <Talk
+                    key={i}
+                    contents={talk.contents}
+                    speaker={talk.speaker}
+                    Icon={Icon(i)}
+                    classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
+                  />
+                ))}
+              </SwiperSlide>
+            </div>
           </div>
         </div>
       </div>
