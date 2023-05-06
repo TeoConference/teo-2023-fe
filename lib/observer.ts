@@ -25,8 +25,8 @@ const useIntersectionObservation = (setActiveId: any, currentId: any) => {
       )
       checkScrollDirection(prevYposition)
       setActiveId((prev: any) => {
-        if (prev === 'content6' && direction === 'down') {
-          return 'content6'
+        if (prev === 'faq' && direction === 'down') {
+          return 'faq'
         } else {
           return visibleContent[0]?.target.id
         }
@@ -34,8 +34,7 @@ const useIntersectionObservation = (setActiveId: any, currentId: any) => {
     }
     //1. 새로운 observer 설정
     const observer = new IntersectionObserver(callback, {
-      rootMargin: '-30% -40%',
-      threshold: [0, 0.5, 1],
+      threshold: [0.05, 1],
     })
 
     //2. DOM 요소 찾고 Observer달아주기
@@ -45,7 +44,7 @@ const useIntersectionObservation = (setActiveId: any, currentId: any) => {
 
     //3. 언 마운트시 옵저버 해제
     return () => observer.disconnect()
-  }, [setActiveId])
+  }, [])
 }
 
 export default useIntersectionObservation
