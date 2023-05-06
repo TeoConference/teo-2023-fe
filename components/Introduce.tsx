@@ -76,7 +76,10 @@ const Icon = (index: number) => {
 
 const Introduce = () => {
   return (
-    <section className="py-12 tablet:py-28 desktop:py-36 px-4">
+    <section
+      id="introduce"
+      className="content py-12 tablet:py-28 desktop:py-36 px-4"
+    >
       <div className="flex-col w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px]  m-auto">
         <div className="flex flex-col items-center max-w-[560px]">
           <div className="flex flex-col space-y-2 items-center">

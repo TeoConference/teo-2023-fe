@@ -7,7 +7,7 @@ import QuestionMark2 from '@/public/images/QuestionMark2.svg'
 
 const Program = () => (
   <section
-    id="content1"
+    id="program"
     className="content relative p-12 tablet:p-28 desktop:pb-0 desktop:pt-36 px-4 bg-gray-100"
   >
     <div className="flex-col gap-12 w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px] m-auto">
@@ -42,8 +42,10 @@ const Program = () => (
                 src={i < 2 ? QuestionMark1 : QuestionMark2}
                 alt="question-mark"
                 className={clsx(
-                  'w-[60px] h-[60px] tablet:w-[70px] tablet:h-[70px] desktop:w-[130px] desktop:h-[130px]'
+                  'tablet:w-[70px] tablet:h-[70px] desktop:w-[130px] desktop:h-[130px]'
                 )}
+                width={60}
+                height={60}
               />
             </div>
           </div>

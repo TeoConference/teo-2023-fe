@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import clsx from 'clsx'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import CloseIcon from '@mui/icons-material/Close'
@@ -11,8 +12,9 @@ import Sidebar from './Sidebar'
 
 export const Header = () => {
   const router = useRouter()
-  const [currentId, setCurrentId] = useState('')
+  const [currentId, setCurrentId] = useState('banner')
   const [isOpen, setIsOpen] = useState(false)
+
   useIntersectionObservation(setCurrentId, currentId)
 
   const toggleSide = () => {
@@ -20,7 +22,12 @@ export const Header = () => {
   }
 
   return (
-    <header className="w-full h-12 backdrop-blur-sm bg-white bg-opacity-90 flex-center sticky top-0 text-body2 z-50 p-4">
+    <header
+      className={clsx(
+        'w-full h-12 backdrop-blur-sm bg-opacity-90 flex-center sticky top-0 text-body2 z-50 p-4 transition-all duration-300',
+        currentId === 'banner' ? 'text-white bg-black' : 'text-black bg-white'
+      )}
+    >
       <nav className="w-full flex justify-between tablet:mx-12 desktop:max-w-[1360px]">
         <div className="h-[19.04px]">
           <Image
@@ -34,49 +41,49 @@ export const Header = () => {
         </div>
         <div className="space-x-10 items-end justify-start hidden desktop:inline-flex">
           <a
-            href="#content1"
+            href="#program"
             className={`${
-              currentId === 'content1' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'program' ? 'font-bold text-[#00DE4F]' : ''
             }`}
           >
             프로그램
           </a>
           <a
-            href="#content2"
+            href="#networking"
             className={`${
-              currentId === 'content2' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'networking' ? 'font-bold text-[#00DE4F]' : ''
             }`}
           >
             네트워킹
           </a>
           <a
-            href="#content3"
+            href="#name-card"
             className={`${
-              currentId === 'content3' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'name-card' ? 'font-bold text-[#00DE4F]' : ''
             }`}
           >
             명함
           </a>
           <a
-            href="#content4"
+            href="#sponsor"
             className={`${
-              currentId === 'content4' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'sponsor' ? 'font-bold text-[#00DE4F]' : ''
             }`}
           >
             후원사
           </a>
           <a
-            href="#content5"
+            href="#location"
             className={`${
-              currentId === 'content5' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'location' ? 'font-bold text-[#00DE4F]' : ''
             }`}
           >
             장소
           </a>
           <a
-            href="#content6"
+            href="#faq"
             className={`${
-              currentId === 'content6' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'faq' ? 'font-bold text-[#00DE4F]' : ''
             }`}
           >
             FAQ

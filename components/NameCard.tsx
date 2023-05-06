@@ -2,7 +2,7 @@ import React from 'react'
 
 const NameCard = () => (
   <section
-    id="content3"
+    id="name-card"
     className="content py-12 tablet:py-28 desktop:py-36 px-4"
   >
     <div className="flex-col w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px] m-auto">

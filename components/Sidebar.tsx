@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import clsx from 'clsx'
 import { KeyboardArrowDown, KeyboardArrowUp, Square } from '@mui/icons-material'
 import LaunchIcon from '@mui/icons-material/Launch'
 
@@ -10,12 +11,12 @@ interface SidebarProps {
 
 const SIDEBAR_ITEMS = {
   CONTENTS: [
-    { name: '프로그램', link: '#content1', id: 'content1' },
-    { name: '네트워킹', link: '#content2', id: 'content2' },
-    { name: '명함', link: '#content3', id: 'content3' },
-    { name: '후원사', link: '#content4', id: 'content4' },
-    { name: '장소', link: '#content5', id: 'content5' },
-    { name: 'FAQ', link: '#content6', id: 'content6' },
+    { name: '프로그램', link: '#program', id: 'program' },
+    { name: '네트워킹', link: '#networking', id: 'networking' },
+    { name: '명함', link: '#name-card', id: 'name-card' },
+    { name: '후원사', link: '#sponsor', id: 'sponsor' },
+    { name: '장소', link: '#location', id: 'location' },
+    { name: 'FAQ', link: '#faq', id: 'faq' },
   ],
   SUB_CONTENTS: [
     { name: '자주 묻는 질문', link: '#sub1' },
@@ -39,7 +40,6 @@ const Sidebar = (props: SidebarProps) => {
       })
     }
     return () => {
-      // document.body.style.cssText = 'overflow: unset;'
       document.querySelectorAll("a[href^='#']").forEach((anchor) => {
         anchor.removeEventListener('click', handleClick)
       })
@@ -51,7 +51,13 @@ const Sidebar = (props: SidebarProps) => {
   }, [])
 
   return (
-    <div className={`${isOpen ? `toggleOn` : `hidden`}`}>
+    <div
+      className={clsx(
+        'transition-all duration-300',
+        isOpen ? 'toggleOn' : 'hidden',
+        currentId === 'banner' ? 'text-white bg-black' : 'text-black bg-white'
+      )}
+    >
       <div className="flex flex-col items-center pt-20 h-full">
         {SIDEBAR_ITEMS.CONTENTS.map((item, idx) => {
           if (idx < 5) {
