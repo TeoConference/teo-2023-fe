@@ -62,7 +62,7 @@ const SPEAKERS = [
 const Program = () => (
   <section
     id="program"
-    className="content relative p-12 tablet:p-28 desktop:pb-0 desktop:pt-36 px-4 bg-gray-100"
+    className="content relative p-12 tablet:p-28 desktop:pb-20 desktop:pt-36 desktop-xl:pb-24 px-4 bg-gray-100"
   >
     <div className="flex-col gap-12 w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px] m-auto">
       <div className="flex flex-col tablet:space-y-12 space-y-6 items-center w-full">
@@ -80,68 +80,55 @@ const Program = () => (
       </div>
       <div className="w-full grid tablet:grid-cols-2 desktop:gap-4 text-white desktop:h-fit">
         {SPEAKERS.map((speaker, i) => (
-          <>
+          <div
+            key={speaker.id}
+            className={clsx(
+              'flex flex-col bg-black tablet:rounded-xl  tablet:p-6 tablet:m-[10px] desktop:p-6 desktop-xl:p-8 desktop-xl:w-[670px] desktop-xl:h-[186px] desktop:w-[502px] desktop:h-[210px] tablet:w-[23.375rem] tablet:h-[16.8125rem] desktop:justify-center justify-between break-keep',
+              i == 0 ? 'rounded-t-lg' : i == 5 ? 'rounded-b-lg' : '',
+              i < 5 ? 'px-4 pt-5 pb-0' : 'px-4 pt-5 pb-4'
+            )}
+          >
             <div
-              key={i}
               className={clsx(
-                'flex flex-col bg-black tablet:rounded-xl  tablet:p-6 tablet:m-[10px] desktop:p-6 desktop-xl:p-8 desktop-xl:w-[670px] desktop-xl:h-[186px] desktop:w-[502px] desktop:h-[210px] tablet:w-[23.375rem] tablet:h-[16.8125rem] desktop:justify-center justify-between break-keep',
-                i == 0 ? 'rounded-t-lg' : i == 5 ? 'rounded-b-lg' : '',
-                i < 5 ? 'px-4 pt-5 pb-0' : 'px-4 pt-5 pb-4'
+                `h-full w-full flex flex-col justify-between tablet:border-none`,
+                i < 5 ? 'pb-5 border-b border-white' : 'pb-3'
               )}
             >
-              <div
-                className={clsx(
-                  `h-full w-full flex flex-col justify-between tablet:border-none`,
-                  i < 5 ? 'pb-5 border-b border-white' : 'pb-3'
-                )}
-              >
-                <div className="flex flex-col tablet:space-y-3">
-                  <p className="desktop:text-[1.3rem] desktop:leading-7 desktop:font-bold tablet:text-sub-h1 text-sub-h2 tablet:flex tablet:justify-start items-start text-[#00DE4F]">
-                    <span>{speaker.title}</span>
-                  </p>
-                  <p className="tablet:text-body2 text-[13px] leading-5 desktop:w-[303px] desktop-xl:w-full">
-                    {speaker.subtitle}
+              <div className="flex flex-col tablet:space-y-3">
+                <p className="desktop:text-[1.3rem] desktop:leading-7 desktop:font-bold tablet:text-sub-h1 text-sub-h2 tablet:flex tablet:justify-start items-start text-[#00DE4F]">
+                  <span>{speaker.title}</span>
+                </p>
+                <p className="tablet:text-body2 text-[13px] leading-5 desktop:w-[303px] desktop-xl:w-full">
+                  {speaker.subtitle}
+                </p>
+              </div>
+              <div className="flex items-end justify-between desktop:items-center desktop-xl:relative">
+                <div>
+                  <p>
+                    <span className="tablet:text-sub-h2 text-mobile-sub-h2">
+                      {speaker.korname}{' '}
+                    </span>
+                    <span className="tablet:text-[1rem] tablet:leading-6 text-[14px] leading-[22px] font-normal">
+                      | 프론트엔드 개발자
+                    </span>
                   </p>
                 </div>
-                <div className="flex items-end justify-between desktop:items-center desktop-xl:relative">
-                  <div>
-                    <p>
-                      <span className="tablet:text-sub-h2 text-mobile-sub-h2">
-                        {speaker.korname}{' '}
-                      </span>
-                      <span className="tablet:text-[1rem] tablet:leading-6 text-[14px] leading-[22px] font-normal">
-                        | 프론트엔드 개발자
-                      </span>
-                    </p>
-                  </div>
-                  <Image
-                    src={speaker.src}
-                    alt={speaker.id}
-                    className={clsx(
-                      'tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] desktop-xl:absolute desktop-xl:right-0 desktop-xl:bottom-1'
-                    )}
-                    width={60}
-                    height={60}
-                  />
-                </div>
+                <Image
+                  src={speaker.src}
+                  alt={speaker.id}
+                  className={clsx(
+                    'tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] desktop-xl:absolute desktop-xl:right-0 desktop-xl:bottom-1'
+                  )}
+                  width={60}
+                  height={60}
+                />
               </div>
             </div>
-            {/* {i < 5 ? (
-              <div className="tablet:hidden border-b border-white"></div>
-            ) : (
-              ''
-            )} */}
-          </>
+          </div>
         ))}
       </div>
     </div>
-    {/* <div className="bg-gradient-to-t from-white to-transparent w-full h-[140px] desktop-xl:h-[198px] left-0 absolute -bottom-2 hidden desktop:block" /> */}
   </section>
 )
 
 export default Program
-
-//  className={clsx(
-//           'flex bg-black rounded-xl border-t tablet:p-6 p-4 desktop:p-8 desktop-xl:h-[294px] desktop:h-[190px] tablet:h-[136px] h-[100px] justify-between',
-//           i == 0 ? 'rounded-t-lg' : i == 3 ? 'rounded-b-lg' : ''
-//         )}
