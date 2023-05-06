@@ -29,7 +29,13 @@ const StaffCard = ({
         className
       )}
     >
-      <Image src={image} alt={`${name} 이미지`} className="w-full" />
+      <Image
+        src={image}
+        alt={`${name} 이미지`}
+        className="w-full"
+        width={170}
+        height={131}
+      />
       <a
         href={url}
         target="_blank"
@@ -44,13 +50,17 @@ const StaffCard = ({
               <Image
                 src={GithubLogo}
                 alt="github 바로가기"
-                className="w-4 tablet:w-5 desktop:w-6"
+                className="tablet:w-5 desktop:w-6"
+                width={16}
+                height={16}
               />
             ) : (
               <Image
                 src={Behance}
                 alt="behance 바로가기"
-                className="w-4 tablet:w-5 desktop:w-6"
+                className="tablet:w-5 desktop:w-6"
+                width={16}
+                height={16}
               />
             )}
           </div>

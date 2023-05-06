@@ -17,21 +17,39 @@ const SNS = () => (
           target="_blank"
           className="flex p-3 tablet:p-4 bg-white rounded-lg"
         >
-          <Image src={LinkedIn} alt="linkedin 바로가기" className="h-full" />
+          <Image
+            src={LinkedIn}
+            alt="linkedin 바로가기"
+            className="h-full"
+            width={34}
+            height={34}
+          />
         </a>
         <a
           href="https://twitter.com/TEOCON_2023"
           target="_blank"
           className="flex p-3 tablet:p-4 bg-white rounded-lg"
         >
-          <Image src={Twitter} alt="twitter 바로가기" className="h-full" />
+          <Image
+            src={Twitter}
+            alt="twitter 바로가기"
+            className="h-full"
+            width={34}
+            height={34}
+          />
         </a>
         <a
           href="https://www.instagram.com/teo_conf/"
           target="_blank"
           className="flex p-3 tablet:p-4 bg-white rounded-lg"
         >
-          <Image src={Instagram} alt="instagram 바로가기" className="h-full" />
+          <Image
+            src={Instagram}
+            alt="instagram 바로가기"
+            className="h-full"
+            width={34}
+            height={34}
+          />
         </a>
       </div>
     </div>
