@@ -8,6 +8,7 @@ import LaunchIcon from '@mui/icons-material/Launch'
 
 import useIntersectionObservation from '@/lib/observer'
 import Logo from '../public/images/Logo.png'
+import LogoWhite from '@/public/images/LogoWhite.svg'
 import Sidebar from './Sidebar'
 
 export const Header = () => {
@@ -33,7 +34,7 @@ export const Header = () => {
           <Image
             className="cursor-pointer"
             alt="logo"
-            src={Logo}
+            src={currentId === 'banner' ? LogoWhite : Logo}
             width={110}
             height={19.04}
             onClick={() => router.push('/')}
