@@ -23,7 +23,6 @@ const FAQField = ({ question, answer }: FAQFieldProps) => {
           isOpen ? 'rounded-t-lg' : 'rounded-lg'
         )}
         onClick={onClickFAQ}
-        aria-expanded={isOpen}
       >
         <p className="text-mobile-sub-h2 tablet:text-sub-h1 text-gray-900">
           {question}
