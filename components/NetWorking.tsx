@@ -5,10 +5,9 @@ import Networking1 from '@/public/images/Networking1.svg'
 import Networking2 from '@/public/images/Networking2.svg'
 import Networking3 from '@/public/images/Networking3.svg'
 
-// w-[280px] tablet:w-[328px] desktop-xl:w-[440px]
 const Networking = () => (
   <div
-    id="content2"
+    id="networking"
     className="content space-y-6 tablet:space-y-20 py-16 tablet:py-28 w-full"
   >
     <div className="flex flex-col space-y-12 items-center">

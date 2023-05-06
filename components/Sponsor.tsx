@@ -4,7 +4,7 @@ import JumpitLogo from '../public/images/JumpitLogo.svg'
 
 const Sponsor = () => (
   <section
-    id="content4"
+    id="sponsor"
     className="content flex flex-col items-center justify-center h-[16.195rem] tablet:h-[26.4375rem] desktop:h-[28.9375rem] bg-gray-100"
   >
     <div className="flex-center flex-col">
@@ -26,7 +26,9 @@ const Sponsor = () => (
         <Image
           alt="JumpitLogo"
           src={JumpitLogo}
-          className="w-[140px] h-[59.13px] tablet:mt-[3.75rem] tablet:w-[206px] tablet:h-[87px]"
+          className="tablet:mt-[3.75rem] tablet:w-[206px] tablet:h-[87px]"
+          width={140}
+          height={59.13}
         />
       </div>
     </div>
