@@ -83,7 +83,7 @@ const Program = () => (
           <div
             key={speaker.id}
             className={clsx(
-              'flex flex-col bg-black tablet:rounded-xl  tablet:p-6 tablet:m-[10px] desktop:p-6 desktop-xl:p-8 desktop-xl:w-[670px] desktop-xl:h-[186px] desktop:w-[502px] desktop:h-[210px] tablet:w-[23.375rem] tablet:h-[16.8125rem] desktop:justify-between justify-between break-keep',
+              'flex flex-col bg-black tablet:rounded-xl  tablet:p-6 tablet:m-[10px] desktop:p-6 desktop-xl:p-8 desktop-xl:w-[670px] desktop-xl:h-[200px] desktop:w-[502px] desktop:h-[210px] tablet:w-[23.375rem] tablet:h-[16.8125rem] desktop:justify-between justify-between break-keep',
               i == 0 ? 'rounded-t-lg' : i == 5 ? 'rounded-b-lg' : '',
               i < 5 ? 'px-4 pt-5 pb-0' : 'px-4 pt-5 pb-4'
             )}
