@@ -83,18 +83,18 @@ const Program = () => (
           <div
             key={speaker.id}
             className={clsx(
-              'flex flex-col bg-black tablet:rounded-xl  tablet:p-6 tablet:m-[10px] desktop:p-6 desktop-xl:p-8 desktop-xl:w-[670px] desktop-xl:h-[186px] desktop:w-[502px] desktop:h-[210px] tablet:w-[23.375rem] tablet:h-[16.8125rem] desktop:justify-center justify-between break-keep',
+              'flex flex-col bg-black tablet:rounded-xl  tablet:p-6 tablet:m-[10px] desktop:p-6 desktop-xl:p-8 desktop-xl:w-[670px] desktop-xl:h-[200px] desktop:w-[502px] desktop:h-[210px] tablet:w-[23.375rem] tablet:h-[16.8125rem] desktop:justify-between justify-between break-keep',
               i == 0 ? 'rounded-t-lg' : i == 5 ? 'rounded-b-lg' : '',
               i < 5 ? 'px-4 pt-5 pb-0' : 'px-4 pt-5 pb-4'
             )}
           >
             <div
               className={clsx(
-                `h-full w-full flex flex-col justify-between tablet:border-none`,
+                `h-full w-full flex flex-col justify-between tablet:border-none tablet:p-2`,
                 i < 5 ? 'pb-5 border-b border-white' : 'pb-3'
               )}
             >
-              <div className="flex flex-col tablet:space-y-3">
+              <div className="flex flex-col tablet:space-y-3 desktop:h-[60%]">
                 <p className="desktop:text-[1.3rem] desktop:leading-7 desktop:font-bold tablet:text-sub-h1 text-sub-h2 tablet:flex tablet:justify-start items-start text-[#00DE4F]">
                   <span>{speaker.title}</span>
                 </p>
@@ -102,7 +102,7 @@ const Program = () => (
                   {speaker.subtitle}
                 </p>
               </div>
-              <div className="flex items-end justify-between desktop:items-center desktop-xl:relative">
+              <div className="flex items-end justify-between desktop:items-center desktop:h-[40%] desktop-xl:relative">
                 <div>
                   <p>
                     <span className="tablet:text-sub-h2 text-mobile-sub-h2">
