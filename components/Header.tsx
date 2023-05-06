@@ -29,7 +29,7 @@ export const Header = () => {
         currentId === 'banner' ? 'text-white bg-black' : 'text-black bg-white'
       )}
     >
-      <nav className="w-full flex justify-between tablet:mx-12 desktop:max-w-[1360px]">
+      <nav className="w-full flex justify-between tablet:mx-12 desktop:max-w-[1024px] desktop-xl:max-w-[1360px]">
         <div className="h-[19.04px]">
           <Image
             className="cursor-pointer"
