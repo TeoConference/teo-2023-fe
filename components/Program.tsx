@@ -74,9 +74,6 @@ const Program = () => (
             스피커의 이야기가 준비되어 있어요!
           </p>
         </div>
-        <p className="text-mobile-body2 tablet:text-body1 text-center">
-          스피커와 주제는 사정에 따라 변경이 될 수도 있습니다.
-        </p>
       </div>
       <div className="w-full grid tablet:grid-cols-2 desktop:gap-4 text-white desktop:h-fit">
         {SPEAKERS.map((speaker, i) => (
