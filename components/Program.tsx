@@ -114,10 +114,8 @@ const Program = () => (
                   src={speaker.src}
                   alt={speaker.id}
                   className={clsx(
-                    'tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] desktop-xl:absolute desktop-xl:right-0 desktop-xl:bottom-1'
+                    'w-[50px] h-[50px] tablet:w-[60px] tablet:h-[60px] desktop:w-[80px] desktop:h-[80px] desktop-xl:absolute desktop-xl:right-0 desktop-xl:bottom-1'
                   )}
-                  width={60}
-                  height={60}
                 />
               </div>
             </div>
