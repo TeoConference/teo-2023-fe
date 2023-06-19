@@ -25,7 +25,7 @@ export const Header = () => {
   return (
     <header
       className={clsx(
-        'w-full h-12 backdrop-blur-sm bg-opacity-90 flex-center sticky top-0 text-body2 z-50 p-4 transition-all duration-300',
+        'w-full h-12 tablet:h-14 backdrop-blur-sm bg-opacity-90 flex-center sticky top-0 text-body2 z-50 p-4 transition-all duration-300',
         currentId === 'banner' ? 'text-white bg-black' : 'text-black bg-white'
       )}
     >
@@ -56,6 +56,14 @@ export const Header = () => {
             }`}
           >
             네트워킹
+          </a>
+          <a
+            href="#gallery"
+            className={`${
+              currentId === 'gallery' ? 'font-bold text-[#00DE4F]' : ''
+            }`}
+          >
+            현장 스케치
           </a>
           <a
             href="#name-card"

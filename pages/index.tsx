@@ -5,6 +5,7 @@ import FAQ from '@/components/FAQ'
 import Introduce from '@/components/Introduce'
 import Program from '@/components/Program'
 import Networking from '@/components/NetWorking'
+import Gallery from '@/components/Gallery'
 import NameCard from '@/components/NameCard'
 import Sponsor from '@/components/Sponsor'
 import Map from '@/components/Map'
@@ -24,6 +25,7 @@ export default function Home() {
       <Introduce />
       <Program />
       <Networking />
+      <Gallery />
       <NameCard />
       <Sponsor />
       <Map />
