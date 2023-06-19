@@ -13,6 +13,7 @@ const SIDEBAR_ITEMS = {
   CONTENTS: [
     { name: '프로그램', link: '#program', id: 'program' },
     { name: '네트워킹', link: '#networking', id: 'networking' },
+    { name: '현장 스케치', link: '#gallery', id: 'gallery' },
     { name: '명함', link: '#name-card', id: 'name-card' },
     { name: '후원사', link: '#sponsor', id: 'sponsor' },
     { name: '장소', link: '#location', id: 'location' },
