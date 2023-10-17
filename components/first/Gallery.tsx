@@ -9,7 +9,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 import 'swiper/css/pagination'
 import 'swiper/css'
 
-import NavButton from '@/components/gallery/NavButton'
+import NavButton from '@/components/first/gallery/NavButton'
 
 const Gallery = () => {
   const totalSlide = 31

@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 
-import SwiperSlide from '@/components/common/SwiperSlide'
-import Talk from '@/components/introduce/Talk'
-import { talkData } from '@/data/Talk'
+import SwiperSlide from '@/components/first/common/SwiperSlide'
+import Talk from '@/components/first/introduce/Talk'
+import { talkData } from '@/data/first/Talk'
 import Introduce1 from '@/public/images/Introduce1.svg'
 import Introduce2 from '@/public/images/Introduce2.svg'
 import Introduce3 from '@/public/images/Introduce3.svg'

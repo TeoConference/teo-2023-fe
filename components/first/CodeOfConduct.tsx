@@ -1,7 +1,7 @@
 import React from 'react'
 
 import FAQField from './common/FAQField'
-import { CodeOfConductData } from '@/data/FAQ'
+import { CodeOfConductData } from '@/data/first/FAQ'
 import type { FAQ as FAQType } from '@/types'
 
 const CodeOfConduct = () => {
