@@ -32,7 +32,7 @@ const FAQ = () => {
               className={clsx(
                 'text-gray-900 px-2 py-1 tablet:px-3 tablet:py-2',
                 selected === Category.APPLY &&
-                  'text-green-main border-green-main border-b'
+                  'text-purple-main border-purple-main border-b'
               )}
               onClick={() => onClickCategory(Category.APPLY)}
             >
@@ -43,7 +43,7 @@ const FAQ = () => {
               className={clsx(
                 'text-gray-90 px-2 py-1 tablet:px-3 tablet:py-2',
                 selected === Category.ON_SITE &&
-                  'text-green-main border-green-main border-b'
+                  'text-purple-main border-purple-main border-b'
               )}
               onClick={() => onClickCategory(Category.ON_SITE)}
             >
@@ -54,7 +54,7 @@ const FAQ = () => {
               className={clsx(
                 'px-2 py-1 tablet:px-3 tablet:py-2 text-gray-900',
                 selected === Category.EVENT &&
-                  'text-green-main border-green-main border-b'
+                  'text-purple-main border-purple-main border-b'
               )}
               onClick={() => onClickCategory(Category.EVENT)}
             >
@@ -65,7 +65,7 @@ const FAQ = () => {
               className={clsx(
                 'px-2 py-1 tablet:px-3 tablet:py-2 text-gray-900',
                 selected === Category.ETC &&
-                  'text-green-main border-green-main border-b'
+                  'text-purple-main border-purple-main border-b'
               )}
               onClick={() => onClickCategory(Category.ETC)}
             >

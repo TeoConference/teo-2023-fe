@@ -11,10 +11,10 @@ const Sponsor = () => (
       <div className="flex-center flex-col">
         <div className="flex-center flex-col">
           <p className="font-Pretendard font-bold text-[2.125rem] tablet:text-[3.125rem] leading-10 text-center">
-            후원사 소개
+            후원사
           </p>
           <p className="font-Pretendard font-medium text-[1.125rem] text-center tablet:hidden">
-            테오의 컨퍼런스 1기는 <br /> 사람인의{' '}
+            테오의 컨퍼런스 2기는 <br /> 사람인의{' '}
             <a
               className="hover:underline"
               target="_blank"
@@ -26,7 +26,7 @@ const Sponsor = () => (
             <br />
           </p>
           <p className="hidden tablet:block font-Pretendard font-bold text-[1.625rem] mt-8">
-            테오의 컨퍼런스 1기는 사람인의{' '}
+            테오의 컨퍼런스 2기는 사람인의{' '}
             <a
               className="hover:underline"
               target="_blank"
@@ -48,9 +48,6 @@ const Sponsor = () => (
             width={140}
             height={59.13}
           />
-          <p className="font-Pretendard font-medium tablet:text-[1rem] text-[0.75rem] text-center">
-            개발자 커리어 점프, 점핏!
-          </p>
         </a>
       </div>
     </div>

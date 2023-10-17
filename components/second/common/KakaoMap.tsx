@@ -43,10 +43,10 @@ const KakaoMap = ({ latitude, longitude }: KakaoMapProps) => {
       <a
         href="https://place.map.kakao.com/2104508385"
         target="_blank"
-        className="flex items-center gap-1 text-white bg-gray-800 rounded-lg absolute text-mobile-sub-h2 bottom-4 right-4 z-10 p-2"
+        className="flex items-center gap-1 text-white bg-gray-800 rounded-lg absolute text-mobile-sub-h2 bottom-4 right-4 z-10 p-2 pr-3"
       >
         <LocationOnIcon />
-        신촌역 사람인 카페 2층
+        사람인 본사 14층
       </a>
     </div>
   )
