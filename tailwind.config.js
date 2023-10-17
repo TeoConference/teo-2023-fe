@@ -34,6 +34,7 @@ module.exports = {
       },
       backgroundImage: {
         'name-card': "url('/images/NameCard.png')",
+        banner: "url('/images/Banner_2.svg')",
       },
     },
     fontSize: {
@@ -57,6 +58,13 @@ module.exports = {
       'desktop-xl': '1920px',
       desktop: '1200px',
       tablet: '1024px',
+      mobile: '1000px',
+    },
+    lineHeight: {
+      14: '3.5rem',
+    },
+    rotate: {
+      45: '45deg',
     },
   },
   plugins: [],

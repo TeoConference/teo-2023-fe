@@ -44,7 +44,7 @@ export const Header = () => {
             className={`${
               currentId === 'program'
                 ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+                : 'text-white'
             }`}
           >
             프로그램
@@ -54,7 +54,7 @@ export const Header = () => {
             className={`${
               currentId === 'networking'
                 ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+                : 'text-white'
             }`}
           >
             네트워킹
@@ -64,7 +64,7 @@ export const Header = () => {
             className={`${
               currentId === 'gallery'
                 ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+                : 'text-white'
             }`}
           >
             현장 스케치
@@ -74,7 +74,7 @@ export const Header = () => {
             className={`${
               currentId === 'name-card'
                 ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+                : 'text-white'
             }`}
           >
             명함
@@ -84,7 +84,7 @@ export const Header = () => {
             className={`${
               currentId === 'sponsor'
                 ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+                : 'text-white'
             }`}
           >
             후원사
@@ -94,7 +94,7 @@ export const Header = () => {
             className={`${
               currentId === 'location'
                 ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+                : 'text-white'
             }`}
           >
             장소
@@ -102,9 +102,7 @@ export const Header = () => {
           <a
             href="#faq"
             className={`${
-              currentId === 'faq'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-[#ffffff]'
+              currentId === 'faq' ? 'font-bold text-[#A869EE]' : 'text-white'
             }`}
           >
             FAQ
