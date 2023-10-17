@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 
-import { StaffData } from '@/data/Staff'
+import { StaffData } from '@/data/first/Staff'
 import StaffCard from './common/StaffCard'
 import SwiperSlide from './common/SwiperSlide'
 

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import JumpitLogo from '../public/images/JumpitLogo.svg'
+import JumpitLogo from '@/public/images/JumpitLogo.svg'
 
 const Sponsor = () => (
   <section
@@ -14,11 +14,28 @@ const Sponsor = () => (
             후원사 소개
           </p>
           <p className="font-Pretendard font-medium text-[1.125rem] text-center tablet:hidden">
-            테오의 컨퍼런스 1기는 <br/> 사람인의 <a className="hover:underline" target="_blank" href="https://www.jumpit.co.kr/">&apos;점핏&apos;</a>에서
-            후원합니다.<br/>
+            테오의 컨퍼런스 1기는 <br /> 사람인의{' '}
+            <a
+              className="hover:underline"
+              target="_blank"
+              href="https://www.jumpit.co.kr/"
+            >
+              &apos;점핏&apos;
+            </a>
+            에서 후원합니다.
+            <br />
           </p>
           <p className="hidden tablet:block font-Pretendard font-bold text-[1.625rem] mt-8">
-            테오의 컨퍼런스 1기는 사람인의 <a className="hover:underline" target="_blank" href="https://www.jumpit.co.kr/">&apos;점핏&apos;</a>에서 후원합니다.<br/>
+            테오의 컨퍼런스 1기는 사람인의{' '}
+            <a
+              className="hover:underline"
+              target="_blank"
+              href="https://www.jumpit.co.kr/"
+            >
+              &apos;점핏&apos;
+            </a>
+            에서 후원합니다.
+            <br />
           </p>
         </div>
       </div>
@@ -31,7 +48,9 @@ const Sponsor = () => (
             width={140}
             height={59.13}
           />
-          <p className="font-Pretendard font-medium tablet:text-[1rem] text-[0.75rem] text-center">개발자 커리어 점프, 점핏!</p>
+          <p className="font-Pretendard font-medium tablet:text-[1rem] text-[0.75rem] text-center">
+            개발자 커리어 점프, 점핏!
+          </p>
         </a>
       </div>
     </div>

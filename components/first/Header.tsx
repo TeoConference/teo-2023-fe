@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import LaunchIcon from '@mui/icons-material/Launch'
 
 import useIntersectionObservation from '@/lib/observer'
-import Logo from '../public/images/Logo.png'
+import Logo from '@/public/images/Logo.png'
 import LogoWhite from '@/public/images/LogoWhite.svg'
 import Sidebar from './Sidebar'
 

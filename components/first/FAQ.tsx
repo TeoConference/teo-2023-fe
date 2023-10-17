@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import clsx from 'clsx'
 
-import FAQField from '@/components/common/FAQField'
-import { faqData } from '@/data/FAQ'
+import FAQField from '@/components/first/common/FAQField'
+import { faqData } from '@/data/first/FAQ'
 import type { FAQ as FAQType } from '@/types'
 
 enum Category {
