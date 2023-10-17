@@ -15,8 +15,11 @@ module.exports = {
         'green-main': '#00DE4F',
         'purple-main': '#A869EE',
         'networking-purple': '#DDD4FC',
+        'networking-purple-2': '#F3EAFD',
         'networking-green': '#96F8C0',
+        'networking-green-2': '#D7F5E4',
         'networking-red': '#FFB6B6',
+        'networking-blue': '#CEE9FA',
       },
       keyframes: {
         moveLeft: {

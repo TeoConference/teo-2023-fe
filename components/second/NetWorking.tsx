@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-import Networking1 from '@/public/images/Networking1.svg'
-import Networking2 from '@/public/images/Networking2.svg'
-import Networking3 from '@/public/images/Networking3.svg'
+import Networking1 from '@/public/images/Networking_2_1.svg'
+import Networking2 from '@/public/images/Networking_2_2.svg'
+import Networking3 from '@/public/images/Networking_2_3.svg'
 
 const Networking = () => (
   <div
@@ -39,10 +39,10 @@ const Networking = () => (
             </p>
           </div>
           <div className="inline-flex space-x-2 text-mobile-body2 tablet:text-body3">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-purple rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-purple-2 rounded">
               <p className="text-gray-900">#취업</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-purple rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-purple-2 rounded">
               <p className="text-gray-900">#개발입문</p>
             </div>
           </div>
@@ -67,13 +67,13 @@ const Networking = () => (
             </p>
           </div>
           <div className="inline-flex space-x-2 text-mobile-body2 tablet:text-body3">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green-2 rounded">
               <p className="text-gray-900">#회사문화</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green-2 rounded">
               <p className="text-gray-900">#자기계발</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-green-2 rounded">
               <p className="text-gray-900">#성장</p>
             </div>
           </div>
@@ -98,13 +98,13 @@ const Networking = () => (
             </p>
           </div>
           <div className="inline-flex space-x-2 text-mobile-body2 tablet:text-body3">
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-red rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-blue rounded">
               <p className="text-gray-900">#행사기획</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-red rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-blue rounded">
               <p className="text-gray-900">#외부활동</p>
             </div>
-            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-red rounded">
+            <div className="inline-flex flex-col px-3.5 py-0.5 bg-networking-blue rounded">
               <p className="text-gray-900">#경험공유</p>
             </div>
           </div>
