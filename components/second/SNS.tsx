@@ -26,7 +26,7 @@ const SNS = () => (
           />
         </a>
         <a
-          href="https://twitter.com/TEOCON_2023"
+          href="https://twitter.com/teoconf"
           target="_blank"
           className="flex p-3 tablet:p-4 bg-white rounded-lg"
         >
