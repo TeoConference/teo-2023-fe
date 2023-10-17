@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+import clsx from 'clsx'
 
 import SwiperSlide from '@/components/first/common/SwiperSlide'
 import Talk from '@/components/first/introduce/Talk'
 import { talkData } from '@/data/second/Talk'
-import Introduce1 from '@/public/images/Introduce1.svg'
-import Introduce2 from '@/public/images/Introduce2.svg'
-import Introduce3 from '@/public/images/Introduce3.svg'
-import Introduce4 from '@/public/images/Introduce4.svg'
+import Introduce1 from '@/public/images/Introduce1_2.svg'
+import Introduce2 from '@/public/images/Introduce2_2.svg'
+import Introduce3 from '@/public/images/Introduce3_2.svg'
+import Introduce4 from '@/public/images/Introduce4_2.svg'
 
 const Icon = (index: number) => {
   switch (index) {
@@ -16,9 +17,9 @@ const Icon = (index: number) => {
         <Image
           src={Introduce1}
           alt="introduce"
-          width="128"
-          height="91"
-          className="ml-16"
+          width="252"
+          height="188"
+          className=""
         />
       )
     case 1:
@@ -26,9 +27,9 @@ const Icon = (index: number) => {
         <Image
           src={Introduce2}
           alt="introduce"
-          width="128"
-          height="107"
-          className="ml-16"
+          width="256"
+          height="282"
+          className="absolute desktop:bottom-[-16px] desktop:left-[-30px] tablet:bottom-[-60px] bottom-[-60px] left-[-24px]"
         />
       )
     case 2:
@@ -36,9 +37,9 @@ const Icon = (index: number) => {
         <Image
           src={Introduce3}
           alt="introduce"
-          width="128"
-          height="91"
-          className="ml-16"
+          width="276"
+          height="276"
+          className="absolute desktop:bottom-[60px] tablet:bottom-[10px] bottom-[30px] left-[-40px]"
         />
       )
     case 3:
@@ -46,9 +47,9 @@ const Icon = (index: number) => {
         <Image
           src={Introduce4}
           alt="introduce"
-          width="128"
-          height="91"
-          className="ml-16"
+          width="324"
+          height="324"
+          className="rotate-45 absolute desktop:bottom-0 tablet:bottom-[-60px] bottom-[-20px] left-[-40px]"
         />
       )
     case 4:
@@ -56,9 +57,9 @@ const Icon = (index: number) => {
         <Image
           src={Introduce2}
           alt="introduce"
-          width="128"
-          height="91"
-          className="ml-16"
+          width="256"
+          height="282"
+          className="absolute desktop:bottom-8 desktop:left-[-30px] tablet:bottom-0 tablet:left-0"
         />
       )
     case 5:
@@ -66,9 +67,9 @@ const Icon = (index: number) => {
         <Image
           src={Introduce4}
           alt="introduce"
-          width="128"
-          height="107"
-          className="ml-16"
+          width="324"
+          height="324"
+          className="rotate-45 absolute desktop:bottom-0 tablet:bottom-[-60px] bottom-[-20px] left-[-40px]"
         />
       )
   }
@@ -93,7 +94,7 @@ const Introduce = () => {
           </div>
           <p className="tablet:text-body1 text-mobile-body2 text-center mt-6 text-gray-900">
             테오의 컨퍼런스는{' '}
-            <strong className="text-green-main rounded-lg">
+            <strong className="text-purple-main rounded-lg">
               &quot;모두에게 열려있는 컨퍼런스&quot;
             </strong>{' '}
             라는 컨셉을 목표로 <br className="hidden tablet:block" />
@@ -103,41 +104,50 @@ const Introduce = () => {
           </p>
         </div>
         <div className="bg-black rounded-3xl mt-[2.25rem] max-w-[85rem] w-full tablet:h-[36.875rem] h-[23.75rem]">
-          <div className="overflow-hidden">
+          <div className="overflow-hidden desktop:h-[590px] tablet:h-[590px] h-[380px]">
             <p className="text-h2 m-auto w-full text-white tablet:mt-10 tablet:block hidden text-center">
               언제나 궁금했던 이야기들
             </p>
             <div className="tablet:mt-12 mt-6 flex">
-              <SwiperSlide className="flex justify-between gap-10">
+              <SwiperSlide className="flex justify-between gap-10 desktop:h-[500px] tablet:h-[456px]">
                 {talkData.map((talk, i) => (
                   <Talk
                     key={i}
                     contents={talk.contents}
                     speaker={talk.speaker}
                     Icon={Icon(i)}
-                    classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
+                    classNames={clsx(
+                      i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : '',
+                      talk.className
+                    )}
                   />
                 ))}
               </SwiperSlide>
-              <SwiperSlide className="flex justify-between gap-10">
+              <SwiperSlide className="flex justify-between gap-10 desktop:h-[500px] tablet:h-[456px]">
                 {talkData.map((talk, i) => (
                   <Talk
                     key={i}
                     contents={talk.contents}
                     speaker={talk.speaker}
                     Icon={Icon(i)}
-                    classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
+                    classNames={clsx(
+                      i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : '',
+                      talk.className
+                    )}
                   />
                 ))}
               </SwiperSlide>
-              <SwiperSlide className="flex justify-between gap-10">
+              <SwiperSlide className="flex justify-between gap-10 desktop:h-[500px] tablet:h-[456px]">
                 {talkData.map((talk, i) => (
                   <Talk
                     key={i}
                     contents={talk.contents}
                     speaker={talk.speaker}
                     Icon={Icon(i)}
-                    classNames={i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : ''}
+                    classNames={clsx(
+                      i == 3 ? 'mr-10 mt-10' : i % 2 ? 'mt-10' : '',
+                      talk.className
+                    )}
                   />
                 ))}
               </SwiperSlide>
