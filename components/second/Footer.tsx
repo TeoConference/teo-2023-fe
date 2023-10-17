@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import Logo from '@/public/images/Logo.png'
+import Logo from '@/public/images/Logo_2.svg'
 import Instagram from '@/public/images/Instagram.svg'
 import LinkedIn from '@/public/images/LinkedIn.svg'
 import Twitter from '@/public/images/Twitter.svg'

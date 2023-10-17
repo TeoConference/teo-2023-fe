@@ -7,8 +7,8 @@ import MenuIcon from '@mui/icons-material/Menu'
 import LaunchIcon from '@mui/icons-material/Launch'
 
 import useIntersectionObservation from '@/lib/observer'
-import Logo from '@/public/images/Logo.png'
-import LogoWhite from '@/public/images/LogoWhite.svg'
+import Logo from '@/public/images/Logo_1.png'
+import LogoWhite from '@/public/images/LogoWhite_1.svg'
 import Sidebar from './Sidebar'
 
 export const Header = () => {

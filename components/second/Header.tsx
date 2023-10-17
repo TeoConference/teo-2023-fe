@@ -7,8 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import LaunchIcon from '@mui/icons-material/Launch'
 
 import useIntersectionObservation from '@/lib/observer'
-import Logo from '@/public/images/Logo.png'
-import LogoWhite from '@/public/images/LogoWhite.svg'
+import Logo from '@/public/images/Logo_2.svg'
 import Sidebar from './Sidebar'
 
 export const Header = () => {
@@ -25,8 +24,7 @@ export const Header = () => {
   return (
     <header
       className={clsx(
-        'w-full h-12 tablet:h-14 backdrop-blur-sm bg-opacity-90 flex-center sticky top-0 text-body2 z-50 p-4 transition-all duration-300',
-        currentId === 'banner' ? 'text-white bg-black' : 'text-black bg-white'
+        'w-full h-12 tablet:h-14 backdrop-blur-sm bg-opacity-90 flex-center sticky top-0 text-body2 z-50 p-4 transition-all duration-300 bg-black'
       )}
     >
       <nav className="w-full flex justify-between tablet:mx-12 desktop:max-w-[1024px] desktop-xl:max-w-[1360px]">
@@ -34,7 +32,7 @@ export const Header = () => {
           <Image
             className="cursor-pointer"
             alt="logo"
-            src={currentId === 'banner' ? LogoWhite : Logo}
+            src={Logo}
             width={110}
             height={19.04}
             onClick={() => router.push('/')}
@@ -44,7 +42,9 @@ export const Header = () => {
           <a
             href="#program"
             className={`${
-              currentId === 'program' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'program'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             프로그램
@@ -52,7 +52,9 @@ export const Header = () => {
           <a
             href="#networking"
             className={`${
-              currentId === 'networking' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'networking'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             네트워킹
@@ -60,7 +62,9 @@ export const Header = () => {
           <a
             href="#gallery"
             className={`${
-              currentId === 'gallery' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'gallery'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             현장 스케치
@@ -68,7 +72,9 @@ export const Header = () => {
           <a
             href="#name-card"
             className={`${
-              currentId === 'name-card' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'name-card'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             명함
@@ -76,7 +82,9 @@ export const Header = () => {
           <a
             href="#sponsor"
             className={`${
-              currentId === 'sponsor' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'sponsor'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             후원사
@@ -84,7 +92,9 @@ export const Header = () => {
           <a
             href="#location"
             className={`${
-              currentId === 'location' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'location'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             장소
@@ -92,13 +102,15 @@ export const Header = () => {
           <a
             href="#faq"
             className={`${
-              currentId === 'faq' ? 'font-bold text-[#00DE4F]' : ''
+              currentId === 'faq'
+                ? 'font-bold text-[#A869EE]'
+                : 'text-[#ffffff]'
             }`}
           >
             FAQ
           </a>
-          <a href="https://festa.io/events/3428" target="_blank">
-            <LaunchIcon className="text-green-main" />
+          <a href="https://www.jumpit.co.kr/contents/428" target="_blank">
+            <LaunchIcon className="text-purple-main" />
           </a>
         </div>
         {isOpen ? (
