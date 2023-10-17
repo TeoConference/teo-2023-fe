@@ -115,11 +115,13 @@ export const Header = () => {
           <CloseIcon
             onClick={toggleSide}
             className="desktop:hidden tablet:block cursor-pointer"
+            sx={{ color: '#ffffff' }}
           />
         ) : (
           <MenuIcon
             onClick={toggleSide}
             className="desktop:hidden tablet:block cursor-pointer"
+            sx={{ color: '#ffffff' }}
           />
         )}
         <Sidebar currentId={currentId} isOpen={isOpen} setIsOpen={setIsOpen} />

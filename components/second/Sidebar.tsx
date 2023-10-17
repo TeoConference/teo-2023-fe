@@ -54,14 +54,13 @@ const Sidebar = (props: SidebarProps) => {
   return (
     <div
       className={clsx(
-        'transition-all duration-300',
-        isOpen ? 'toggleOn' : 'hidden',
-        currentId === 'banner' ? 'text-white bg-black' : 'text-black bg-white'
+        'transition-all duration-300 text-white bg-black',
+        isOpen ? 'toggleOn' : 'hidden'
       )}
     >
       <div className="flex flex-col items-center pt-20 h-full">
         {SIDEBAR_ITEMS.CONTENTS.map((item, idx) => {
-          if (idx < 5) {
+          if (idx < 6) {
             return (
               <div
                 key={idx}
@@ -69,7 +68,7 @@ const Sidebar = (props: SidebarProps) => {
               >
                 <a href={item.link} className="flex items-center gap-4">
                   {currentId === item.id ? (
-                    <Square className="fill-[#00DE4F]" />
+                    <Square className="fill-[#A869EE]" />
                   ) : (
                     <Square className="fill-[#E8E8E8]" />
                   )}
@@ -85,7 +84,7 @@ const Sidebar = (props: SidebarProps) => {
               >
                 <a href={item.link} className="flex items-center gap-4">
                   {currentId === item.id ? (
-                    <Square className="fill-[#00DE4F]" />
+                    <Square className="fill-[#A869EE]" />
                   ) : (
                     <Square className="fill-[#E8E8E8]" />
                   )}
@@ -124,8 +123,8 @@ const Sidebar = (props: SidebarProps) => {
             target="_blank"
             className="inline-flex items-center gap-4"
           >
-            <LaunchIcon className="text-green-main" />{' '}
-            <span className="text-green-main">참가신청</span>
+            <LaunchIcon className="text-purple-main" />{' '}
+            <span className="text-purple-main">참가신청</span>
           </a>
         </div>
       </div>
