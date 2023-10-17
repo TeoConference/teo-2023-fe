@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 import Logo from '@/public/images/Logo_2.svg'
-import Instagram from '@/public/images/Instagram.svg'
-import LinkedIn from '@/public/images/LinkedIn.svg'
-import Twitter from '@/public/images/Twitter.svg'
-import UpArrow from '@/public/images/UpArrow.svg'
+import Instagram from '@/public/images/Instagram_2.svg'
+import LinkedIn from '@/public/images/LinkedIn_2.svg'
+import Twitter from '@/public/images/Twitter_2.svg'
+import UpArrow from '@/public/images/UpArrow_2.svg'
 import { useState } from 'react'
 import PrivacyModal from './PrivacyModal'
 
@@ -16,16 +16,16 @@ const Footer = () => {
   }
 
   return (
-    <footer className="relative bg-gray-100 px-4 py-10 tablet:py-20">
+    <footer className="relative bg-gray-900 px-6 pt-10 pb-8 tablet:pt-20 tablet:pb-16">
       <div className="tablet:max-w-[768px] desktop:max-w-[1024px] desktop-xl:max-w-[1360px] m-auto">
         <Image alt="logo" src={Logo} width={150} height={25.96} />
-        <p className="text-sub-h2 text-gray-400 mt-4 pb-8 border-b">
+        <p className="text-sub-h2 text-white mt-4 pb-2">
           ⓒ TEOCON. All Right Reserved.
         </p>
-        <div className="tablet:flex items-center justify-between">
+        <div className="tablet:flex items-end justify-between">
           <button
             type="button"
-            className="text-mobile-h2 tablet:text-sub-h2 text-gray-400 mt-8"
+            className="text-mobile-h2 tablet:text-sub-h2 text-white mt-1"
             onClick={powerModal}
           >
             개인정보 처리방침
