@@ -11,7 +11,7 @@ const Staff = () => (
       <div className="text-center text-mobile-h1 tablet:text-h1 justify-center">
         테오콘을 <br className="block tablet:hidden" />
         만들어가는
-        <span className="text-center tablet:text-green-500"> 사람들</span>
+        <span className="text-center tablet:text-purple-main"> 사람들</span>
       </div>
       <p className="text-h3 text-center tablet:mt-4 text-gray-900 hidden tablet:block">
         테오콘을 함께 만든 스태프를 소개합니다!

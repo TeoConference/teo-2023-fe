@@ -8,7 +8,7 @@ import Raul from '@/public/images/staff/Raul.png'
 import Sudal from '@/public/images/staff/Sudal.png'
 import Three from '@/public/images/staff/Three.png'
 import Juni from '@/public/images/staff/Juni.png'
-import Mini from '@/public/images/staff/Mini.png'
+import Anna from '@/public/images/staff/Anna.png'
 import { StaticImageData } from 'next/image'
 
 type StaffDataType = {
@@ -103,10 +103,10 @@ export const StaffData: StaffDataType[] = [
   },
   {
     id: 11,
-    name: '미니',
-    description: '안녕하세요. 미니입니다.',
-    image: Mini,
-    url: 'https://github.com/skmn3',
-    position: 'developer',
+    name: '애나',
+    description: '기록과 소통을 좋아하는 디자이너',
+    image: Anna,
+    url: 'https://www.behance.net/annagoesthere',
+    position: 'designer',
   },
 ]
