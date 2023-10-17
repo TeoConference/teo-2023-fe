@@ -13,6 +13,7 @@ module.exports = {
       },
       colors: {
         'green-main': '#00DE4F',
+        'purple-main': '#A869EE',
         'networking-purple': '#DDD4FC',
         'networking-green': '#96F8C0',
         'networking-red': '#FFB6B6',
