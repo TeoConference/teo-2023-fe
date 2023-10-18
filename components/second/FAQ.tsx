@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import clsx from 'clsx'
 
-import FAQField from '@/components/first/common/FAQField'
+import FAQField from '@/components/second/common/FAQField'
 import { faqData } from '@/data/second/FAQ'
 import type { FAQ as FAQType } from '@/types'
 
@@ -30,7 +30,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'text-gray-900 px-2 py-1 tablet:px-3 tablet:py-2',
+                'text-gray-900 px-2 py-1 tablet:px-3 tablet:py-2 transition-all',
                 selected === Category.APPLY &&
                   'text-purple-main border-purple-main border-b'
               )}
@@ -41,7 +41,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'text-gray-90 px-2 py-1 tablet:px-3 tablet:py-2',
+                'text-gray-90 px-2 py-1 tablet:px-3 tablet:py-2 transition-all',
                 selected === Category.ON_SITE &&
                   'text-purple-main border-purple-main border-b'
               )}
@@ -52,7 +52,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'px-2 py-1 tablet:px-3 tablet:py-2 text-gray-900',
+                'px-2 py-1 tablet:px-3 tablet:py-2 text-gray-900 transition-all',
                 selected === Category.EVENT &&
                   'text-purple-main border-purple-main border-b'
               )}
@@ -63,7 +63,7 @@ const FAQ = () => {
             <button
               type="button"
               className={clsx(
-                'px-2 py-1 tablet:px-3 tablet:py-2 text-gray-900',
+                'px-2 py-1 tablet:px-3 tablet:py-2 text-gray-900 transition-all',
                 selected === Category.ETC &&
                   'text-purple-main border-purple-main border-b'
               )}
