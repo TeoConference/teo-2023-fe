@@ -15,7 +15,7 @@ const Banner = () => {
       id="banner"
       className="content bg-[#F8F8F8] desktop:h-[calc(100vh_-_40.8rem)] tablet:h-[894px] h-[590px] desktop:bg-banner bg-center bg-no-repeat flex-center relative desktop:px-8 tablet:px-10"
     >
-      <div className="w-full tablet:h-full flex-center flex-col tablet:justify-center desktop:relative desktop:max-w-[100%] desktop-xl:max-w-[1620px] px-20">
+      <div className="w-full tablet:h-full flex-center flex-col tablet:justify-center desktop:relative desktop:max-w-[100%] desktop-xl:max-w-[1620px] tablet:px-20 px-[50.5px]">
         <div className="w-full desktop:absolute desktop:bottom-20 relative z-[1]">
           <div className="z-[1] tablet:mt-0 desktop:w-full desktop:space-y-20">
             <h1 className="font-AbhayaLibre font-bold desktop:hidden text-[60px] tablet:text-[4.375rem] desktop:text-[5rem] leading-[56px] tracking-[-0.6%] text-center desktop:text-right">
