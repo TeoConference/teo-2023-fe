@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Pretendard: ['Pretendard'],
+        AbhayaLibre: ['AbhayaLibre'],
       },
       colors: {
         'green-main': '#00DE4F',

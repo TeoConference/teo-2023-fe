@@ -65,6 +65,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'AbhayaLibre';
+  src: url('../public/fonts/AbhayaLibre-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+
 @layer base {
   body,
   #root {
