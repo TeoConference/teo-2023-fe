@@ -31,8 +31,8 @@ const FAQField = ({ question, answer }: FAQFieldProps) => {
       </div>
       <div
         className={clsx(
-          'pl-4 pr-11 tablet:pl-8 tablet:pr-20 bg-gray-50 rounded-b-lg overflow-hidden transition-all duration-700',
-          isOpen ? 'opacity-100 h-fit' : 'opacity-0 h-0'
+          'pl-4 pr-11 py-2 tablet:pl-8 tablet:pr-20 bg-gray-50 rounded-b-lg',
+          isOpen ? 'block' : 'hidden'
         )}
       >
         <p className="text-mobile-body2 tablet:text-body2 text-gray-900 pb-2 tablet:pb-4">

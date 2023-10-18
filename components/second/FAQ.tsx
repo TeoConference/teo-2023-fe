@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import clsx from 'clsx'
 
-import FAQField from '@/components/first/common/FAQField'
+import FAQField from '@/components/second/common/FAQField'
 import { faqData } from '@/data/second/FAQ'
 import type { FAQ as FAQType } from '@/types'
 
