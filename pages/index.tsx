@@ -5,7 +5,6 @@ import FAQ from '@/components/second/FAQ'
 import Introduce from '@/components/second/Introduce'
 import Program from '@/components/second/Program'
 import Networking from '@/components/second/NetWorking'
-import Gallery from '@/components/second/Gallery'
 import NameCard from '@/components/second/NameCard'
 import Sponsor from '@/components/second/Sponsor'
 import Map from '@/components/second/Map'
@@ -25,7 +24,6 @@ export default function Home() {
       <Introduce />
       <Program />
       <Networking />
-      <Gallery />
       <NameCard />
       <Sponsor />
       <Map />
