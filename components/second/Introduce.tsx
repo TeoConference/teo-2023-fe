@@ -95,8 +95,8 @@ const Introduce = () => {
           <p className="tablet:text-body1 text-mobile-body2 text-center mt-6 text-gray-900">
             테오의 컨퍼런스는{' '}
             <strong className="text-purple-main rounded-lg">
-              &quot;모두에게 열려있는 컨퍼런스&quot;
-            </strong>{' '}
+              모두에게 열려있는 컨퍼런스
+            </strong>
             라는 컨셉을 목표로 <br className="hidden tablet:block" />
             서로가 갖고 있는 다양한 경험과 지식을 공유하고{' '}
             <br className="hidden tablet:block" />

@@ -4,8 +4,8 @@ import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDou
 
 import TeoBI from '@/public/images/TeoBI.png'
 import TeoBI2 from '@/public/images/TeoBI2.png'
-import Mouse from '@/public/images/Mouse.svg'
-import Down from '@/public/images/Down.svg'
+import Mouse from '@/public/images/Mouse_1.svg'
+import Down from '@/public/images/Down_1.svg'
 
 const Banner = () => {
   return (
