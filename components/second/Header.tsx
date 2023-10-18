@@ -9,9 +9,11 @@ import LaunchIcon from '@mui/icons-material/Launch'
 import useIntersectionObservation from '@/lib/observer'
 import Logo from '@/public/images/Logo_2.svg'
 import Sidebar from './Sidebar'
+import { SectionTab } from './common/SectionTab'
 
 export const Header = () => {
   const router = useRouter()
+
   const [currentId, setCurrentId] = useState('banner')
   const [isOpen, setIsOpen] = useState(false)
 
@@ -39,74 +41,24 @@ export const Header = () => {
           />
         </div>
         <div className="space-x-10 items-end justify-start hidden desktop:inline-flex">
-          <a
-            href="#program"
-            className={`${
-              currentId === 'program'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-white'
-            }`}
-          >
+          <SectionTab section="program" currentSection={currentId}>
             프로그램
-          </a>
-          <a
-            href="#networking"
-            className={`${
-              currentId === 'networking'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-white'
-            }`}
-          >
+          </SectionTab>
+          <SectionTab section="networking" currentSection={currentId}>
             네트워킹
-          </a>
-          <a
-            href="#gallery"
-            className={`${
-              currentId === 'gallery'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-white'
-            }`}
-          >
-            현장 스케치
-          </a>
-          <a
-            href="#name-card"
-            className={`${
-              currentId === 'name-card'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-white'
-            }`}
-          >
+          </SectionTab>
+          <SectionTab section="name-card" currentSection={currentId}>
             명함
-          </a>
-          <a
-            href="#sponsor"
-            className={`${
-              currentId === 'sponsor'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-white'
-            }`}
-          >
+          </SectionTab>
+          <SectionTab section="sponsor" currentSection={currentId}>
             후원사
-          </a>
-          <a
-            href="#location"
-            className={`${
-              currentId === 'location'
-                ? 'font-bold text-[#A869EE]'
-                : 'text-white'
-            }`}
-          >
+          </SectionTab>
+          <SectionTab section="location" currentSection={currentId}>
             장소
-          </a>
-          <a
-            href="#faq"
-            className={`${
-              currentId === 'faq' ? 'font-bold text-[#A869EE]' : 'text-white'
-            }`}
-          >
+          </SectionTab>
+          <SectionTab section="faq" currentSection={currentId}>
             FAQ
-          </a>
+          </SectionTab>
           <a href="https://www.jumpit.co.kr/contents/428" target="_blank">
             <LaunchIcon className="text-purple-main" />
           </a>
