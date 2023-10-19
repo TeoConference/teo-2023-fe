@@ -9,6 +9,7 @@ import Sudal from '@/public/images/staff/Sudal.png'
 import Three from '@/public/images/staff/Three.png'
 import Juni from '@/public/images/staff/Juni.png'
 import Anna from '@/public/images/staff/Anna.png'
+import Rookie from '@/public/images/staff/Rookie.png'
 import { StaticImageData } from 'next/image'
 
 type StaffDataType = {
@@ -108,5 +109,13 @@ export const StaffData: StaffDataType[] = [
     image: Anna,
     url: 'https://www.behance.net/annagoesthere',
     position: 'designer',
+  },
+  {
+    id: 12,
+    name: '루키',
+    description: '편리함을 추구하는 게으름뱅이 개발자',
+    image: Rookie,
+    url: 'https://github.com/RookieAND',
+    position: 'developer',
   },
 ]
