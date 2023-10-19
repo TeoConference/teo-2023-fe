@@ -25,11 +25,15 @@ const StaffCard = ({
   return (
     <li
       className={clsx(
-        'flex flex-col whitespace-pre w-[170px] tablet:w-[217px] desktop:w-[300px] rounded-b-xl overflow-hidden',
+        'flex flex-col whitespace-pre w-[170px] tablet:w-[217px] desktop:w-[300px] rounded-t-xl rounded-b-xl overflow-hidden',
         className
       )}
     >
-      <Image src={image} alt={`${name} 이미지`} className="w-full" />
+      <Image
+        src={image}
+        alt={`${name} 이미지`}
+        className="w-full desktop:h-[231.17px] tablet:h-[161.7px] h-[131px]"
+      />
       <a
         href={url}
         target="_blank"
