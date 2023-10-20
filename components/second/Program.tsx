@@ -34,7 +34,7 @@ const Program = () => (
     id="program"
     className="content relative p-12 tablet:p-28 desktop:pb-20 desktop:pt-36 desktop-xl:pb-24 px-4 bg-gray-100"
   >
-    <div className="flex-col gap-12 w-full flex-center tablet:w-[768px] desktop:w-[1024px] desktop-xl:w-[1360px] m-auto">
+    <div className="flex-col gap-12 w-full flex-center tablet:w-[768px] desktop:w-[1024px] m-auto">
       <div className="flex flex-col tablet:space-y-12 space-y-6 items-center w-full">
         <div className="flex flex-col tablet:space-y-4 space-y-2 items-center">
           <p className="text-mobile-h1 tablet:text-h1 text-center">프로그램</p>
