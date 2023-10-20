@@ -59,7 +59,7 @@ const Program = () => (
           >
             <div
               className={clsx(
-                `h-full w-full flex justify-between`,
+                `h-full w-full flex justify-between items-start`,
                 i < 4
                   ? 'border-b border-white pb-5 tablet:pb-6 desktop:pb-8'
                   : ''
