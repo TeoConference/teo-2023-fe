@@ -17,7 +17,7 @@ const NameCard = () => (
             </p>
           </div>
         </div>
-        <div className="bg-name-card max-w-[1300px] bg-cover rounded-lg h-[250px] tablet:h-[280px] desktop:h-[367px] w-full" />
+        <div className="bg-name-card-2 max-w-[1300px] bg-cover bg-center rounded-lg h-[250px] tablet:h-[276px] desktop:h-[490px] w-full" />
       </div>
     </div>
   </section>
