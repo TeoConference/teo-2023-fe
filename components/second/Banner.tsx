@@ -3,7 +3,6 @@ import React from 'react'
 import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined'
 
 import Mouse from '@/public/images/Mouse_2.svg'
-import Down from '@/public/images/Down_2.svg'
 import TabletBI1 from '@/public/images/TabletBI1_2.svg'
 import TabletBI2 from '@/public/images/TabletBI2_2.svg'
 import Yellow from '@/public/images/yellow_2.svg'
@@ -33,13 +32,6 @@ const Banner = () => {
         </div>
         <div className="hidden gap-2 desktop:block absolute left-1/2 desktop:bottom-20">
           <Image alt="scroll down" src={Mouse} width={26} height={40} />
-          <Image
-            className="m-auto mt-2 desktop:animate-bounce"
-            alt="scroll down"
-            src={Down}
-            width={12}
-            height={12}
-          />
         </div>
         <div className="desktop:hidden tablet:block absolute tablet:top-0 tablet:left-10 top-[-30px] left-[-54px] tablet:w-auto w-96 h-80 z-[0]">
           <Image alt="TabletBI1" src={TabletBI1} />
