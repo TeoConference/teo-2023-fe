@@ -67,7 +67,7 @@ const Staff = () => (
                 <StaffCard
                   key={staff.name}
                   {...staff}
-                  className={clsx(index == 10 ? 'mr-3 tablet:mr-4' : '')}
+                  className={clsx(index == 11 ? 'mr-3 tablet:mr-4' : '')}
                 />
               )
           )}
@@ -82,7 +82,7 @@ const Staff = () => (
                 <StaffCard
                   key={staff.name}
                   {...staff}
-                  className={clsx(index == 10 ? 'mr-3 tablet:mr-4' : '')}
+                  className={clsx(index == 11 ? 'mr-3 tablet:mr-4' : '')}
                 />
               )
           )}
@@ -97,7 +97,7 @@ const Staff = () => (
                 <StaffCard
                   key={staff.name}
                   {...staff}
-                  className={clsx(index == 10 ? 'mr-3 tablet:mr-4' : '')}
+                  className={clsx(index == 11 ? 'mr-3 tablet:mr-4' : '')}
                 />
               )
           )}

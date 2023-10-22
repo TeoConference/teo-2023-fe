@@ -46,7 +46,7 @@ module.exports = {
       h1: ['3.125rem', { lineHeight: '3.5rem', fontWeight: 700 }],
       h2: ['2.5rem', { lineHeight: '2.8rem', fontWeight: 700 }],
       h3: ['1.625rem', { lineHeight: '2.4rem', fontWeight: 700 }],
-      'sub-h1': ['1.3rem', { lineHeight: '2.3rem', fontWeight: 700 }],
+      'sub-h1': ['1.2rem', { lineHeight: '2.3rem', fontWeight: 700 }],
       'sub-h2': ['1rem', { lineHeight: '1.5rem', fontWeight: 700 }],
       body1: ['1.3rem', { lineHeight: '2.3rem', fontWeight: 400 }],
       body2: ['1rem', { lineHeight: '1.5rem', fontWeight: 400 }],
