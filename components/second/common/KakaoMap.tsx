@@ -41,7 +41,7 @@ const KakaoMap = ({ latitude, longitude }: KakaoMapProps) => {
         className="w-full h-60 tablet:h-[338px] desktop:h-[450px] rounded-lg"
       />
       <a
-        href="https://place.map.kakao.com/2104508385"
+        href="https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,477625,1107130&rt1=&rt2=%EC%82%AC%EB%9E%8C%EC%9D%B8&rtIds=,14521432"
         target="_blank"
         className="flex items-center gap-1 text-white bg-gray-800 rounded-lg absolute text-mobile-sub-h2 bottom-4 right-4 z-10 p-2 pr-3"
       >
